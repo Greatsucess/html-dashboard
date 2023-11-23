@@ -1,0 +1,444 @@
+// Function to convert el logo del centro en img URL a data URL, que es lo unico que admite el export pdf				
+function toDataURL(hasMembrete, src, callback, outputFormat) {
+	
+
+	if (hasMembrete){
+		var img = new Image();
+		img.crossOrigin = 'Anonymous';
+		
+		var canvas = document.createElement('CANVAS');
+		canvas.setAttribute('width', '1122');
+		canvas.setAttribute('height', '113');
+		var context = canvas.getContext("2d");
+		
+		var imageObj = new Image();
+		imageObj.crossOrigin = 'Anonymous';
+		imageObj.onload = function() {
+
+			var imgWidth = imageObj.naturalWidth;
+			var imgHeight = imageObj.naturalHeight;
+			var screenWidth  = canvas.width;
+			var scaleX = 1;
+			if (imgWidth > screenWidth)
+				scaleX = screenWidth/imgWidth;
+			
+			var screenHeight = canvas.height;
+			var scaleY = 1;
+			if (imgHeight > screenHeight)
+				scaleY = screenHeight/imgHeight;
+			var scale = scaleY;
+			if(scaleX < scaleY)
+				scale = scaleX;
+			if(scale < 1){
+				imgHeight = imgHeight*scale;
+				imgWidth = imgWidth*scale;          
+			}
+
+			logo_height = imgHeight;
+			logo_width = imgWidth;
+			//console.log("-->"+logo_height);
+			//console.log("-->"+logo_width);
+			//console.log(screenHeight);
+			
+			context.drawImage(imageObj, 0, 0, imageObj.naturalWidth, imageObj.naturalHeight, 0,0, imgWidth, imgHeight);
+			
+			dataURL = canvas.toDataURL(outputFormat);
+			callback(dataURL);
+		};	
+	}else{ //sin membrete
+		var imageObj = new Image();
+		imageObj.crossOrigin = 'Anonymous';
+		imageObj.onload = function() {
+			var canvas = document.createElement('CANVAS');
+			var context = canvas.getContext("2d");
+			var dataURL;
+			canvas.height = this.naturalHeight;
+			canvas.width = this.naturalWidth;
+			context.drawImage(this, 0, 0);
+			dataURL = canvas.toDataURL(outputFormat);
+			callback(dataURL);
+		};
+	}
+
+	imageObj.src = src;
+	
+	if (imageObj.complete || imageObj.complete === undefined) {
+		imageObj.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+		imageObj.src = src;
+	}
+}
+
+var logo, logo_inferior;
+var logo_width,logo_height;
+
+var output;
+var output_inferior;
+var hasMembrete=false;
+var hasMembreteInferior=false;
+
+function drawMembreteSuperior(){
+	if ($("#image_centro").length){
+		output = $("#image_centro").val().split(/[/]+/).pop();
+		if (output.indexOf("membrete") != -1) hasMembrete=true; //Con membrete
+		toDataURL(hasMembrete, $("#image_centro").val(), function(dataUrl) {
+			logo = dataUrl;
+		})
+	}
+
+}
+
+function drawMembreteInferior(){
+	if ($("#image_inferior_centro").length){
+		output_inferior = $("#image_inferior_centro").val().split(/[/]+/).pop();
+		if (output_inferior.indexOf("membrete_inferior") != -1) hasMembreteInferior=true; //Con membrete
+		toDataURL(hasMembreteInferior, $("#image_inferior_centro").val(), function(dataUrl) {
+			logo_inferior = dataUrl;
+		})
+	}
+}
+
+drawMembreteSuperior();
+drawMembreteInferior();
+
+
+function replaceTxs(tString){
+	tString=tString.replace("<tr>","");
+	tString=tString.replace("<td>","");
+	tString=tString.replace("</tr>","");
+	tString=tString.replace("</td>","");
+	return tString;
+}
+
+				
+function get_datatable_buttons(table) {
+    // pdfmake arabic fonts support
+    if (app.user_language.toLowerCase() == 'persian' || app.user_language.toLowerCase() == 'arabic') {
+        if ($('body').find('#amiri').length === 0) {
+            var mainjs = document.createElement('script');
+            mainjs.setAttribute('src', 'https://rawgit.com/xErik/pdfmake-fonts-google/master/build/script/ofl/amiri.js');
+            mainjs.setAttribute('id', 'amiri');
+            document.head.appendChild(mainjs);
+
+            var mapjs = document.createElement('script');
+            mapjs.setAttribute('src', 'https://rawgit.com/xErik/pdfmake-fonts-google/master/build/script/ofl/amiri.map.js');
+            document.head.appendChild(mapjs);
+        }
+    }
+	
+	
+	
+		
+
+	
+	
+        /*    var mainjs = document.createElement('script');
+            mainjs.setAttribute('src', '/assets/js/vfs_fonts.js');
+            mainjs.setAttribute('id', 'vfs_fonts.js');
+		document.head.appendChild(mainjs);	*/
+
+    var formatExport = {
+        body: function(data, row, column, node) {
+
+			
+			if (data.indexOf('custom_tagit-label')>0){
+				var html; 
+				
+				var parser = new DOMParser();
+				var doc = parser.parseFromString(data, 'text/html');
+				html = doc.body;
+				
+				$('body #mySingleField').each(function(){// id of ul
+					var li = $(this).find('li')//get each li in ul
+					var serializedtags = '';
+					li.each(function(){// id of ul
+						serializedtags += $(this).text()  + ', ';
+					})
+					data = serializedtags.replace(/, \s*$/, "");
+					data = data.replace(/,\s*$/, "");
+				})
+				
+			}
+			
+			// Fix for notes inline datatables
+            // Causing issues because of the hidden textarea for edit and the content is duplicating
+            // This logic may be extended in future for other similar fixes
+            var newTmpRow = $('<div></div>', data);
+            newTmpRow.append(data);
+
+            if (newTmpRow.find('[data-note-edit-textarea]').length > 0) {
+                newTmpRow.find('[data-note-edit-textarea]').remove();
+                data = newTmpRow.html().trim();
+            }
+            // Convert e.q. two months ago to actual date
+            var exportTextHasActionDate = newTmpRow.find('.text-has-action.is-date');
+
+            if(exportTextHasActionDate.length) {
+               data = exportTextHasActionDate.attr('data-title');
+            }
+
+            if (newTmpRow.find('.row-options').length > 0) {
+                newTmpRow.find('.row-options').remove();
+                data = newTmpRow.html().trim();
+            }
+
+            if (newTmpRow.find('.table-export-exclude').length > 0) {
+                newTmpRow.find('.table-export-exclude').remove();
+                data = newTmpRow.html().trim();
+            }
+			
+            if (data) {
+				// data=data.replace('t','<');
+				// data=data.replace('&gt;','>');
+				// console.log(data);
+         /*       // 300,00 becomes 300.00 because excel does not support decimal as coma
+                var regexFixExcelExport = new RegExp("([0-9]{1,3})(,)([0-9]{" + app.options.decimal_places + ',' + app.options.decimal_places + "})", "gm");
+                // Convert to string because matchAll won't work on integers in case datatables convert the text to integer
+                var _stringData = data.toString();
+                var found = _stringData.matchAll(regexFixExcelExport);
+                if (found) {
+                    data = data.replace(regexFixExcelExport, "$1.$3");
+                }*/
+            }
+
+            // Datatables use the same implementation to strip the html.
+            var div = document.createElement("div");
+            div.innerHTML = data;
+            var text = div.textContent || div.innerText || "";
+
+            return text.trim();
+        }
+    };
+    var table_buttons_options = [];
+
+    if (typeof(table_export_button_is_hidden) != 'function' || !table_export_button_is_hidden()) {
+        table_buttons_options.push({
+            extend: 'collection',
+            text: app.lang.dt_button_export,
+            className: 'btn btn-default-dt-options',
+            buttons: [{
+                extend: 'excelHtml5',
+                text: app.lang.dt_button_excel,
+				title: function ( data, columnIdx ) {
+					if ($('#title_manage_pdf').text()){
+						return $('#title_manage_pdf').text();	
+					}
+				},
+				filename: function () {
+					if ($('#pdf_file_name').text()){
+						return $('#pdf_file_name').text();	
+					}else if ($('#title_manage_pdf').text()){
+						return $('#title_manage_pdf').text();	
+					}
+				},
+                footer: true,
+                exportOptions: {
+                    columns: [':not(.not-export)'],
+                    rows: function(index) {
+						return _dt_maybe_export_only_selected_rows(index, table);
+                    },
+                    format: formatExport,
+                },
+
+            }, {
+                extend: 'csvHtml5',
+                text: app.lang.dt_button_csv,
+                footer: true,
+                exportOptions: {
+                    columns: [':not(.not-export)'],
+                    rows: function(index) {
+                        return _dt_maybe_export_only_selected_rows(index, table);
+                    },
+                    format: formatExport,
+                }
+            }, {
+                extend: 'pdfHtml5',
+                text: app.lang.dt_button_pdf,
+                footer: true,
+				header: true,
+				filename: function () {
+					if ($('#pdf_file_name').text()){
+						return $('#pdf_file_name').text();	
+					}else if ($('#title_manage_pdf').text()){
+						return $('#title_manage_pdf').text();	
+					}
+				},
+                exportOptions: {
+                    columns: [':not(.not-export)'],
+                    rows: function(index) {
+                        return _dt_maybe_export_only_selected_rows(index, table);
+                    },
+                    format: formatExport,
+                },
+                orientation: 'landscape',
+				pageSize: 'A4', 
+                customize: function(doc) {
+					doc.content.splice(0,1);
+				
+					
+						doc['header'] = (function (page, pages) {
+							if (output.indexOf("membrete") != -1) { //Con membrete
+								return {
+									table:{
+										//headerRows: 1,
+										widths: [ '100%', 'auto'],
+										body: [
+											[{									
+												width: logo_width*0.75, //0.75 ->bug en pdfmaker https://github.com/bpampuch/pdfmake/issues/328
+												image: logo,
+												alignment: 'center',
+												margin:[0,0,0,0]
+											}],
+											[{
+												text: $('#title_manage_pdf').text(),
+												fontSize: 14,
+												margin:[10,0,0,0]
+											}]
+											
+										]
+									},
+									layout: 'noBorders',
+									margin: [0,0,0,0]
+								}
+							}else{ //Sin membrete y con logo
+								return {
+									table:{
+										headerRows: 1,
+										widths: [ '100%', 'auto'],
+										body: [
+											[{									
+												width: 60,
+												image: logo,
+												alignment: 'right',
+												margin:[0,0,10,0]
+											}],
+											[{
+												text: $('#title_manage_pdf').text(),
+												fontSize: 14
+											}]
+										]
+									},
+									layout: 'noBorders',
+									margin: [60,20,0,0]
+								}						
+							}
+						});
+						
+							
+					
+
+					doc['footer'] = (function(page, pages) {
+						if (output_inferior.indexOf("membrete_inferior") != -1) { //Con membrete inferior
+							return {
+								columns: [
+									{									
+										width: logo_width*0.75, //0.75 -> bug en pdfmaker https://github.com/bpampuch/pdfmake/issues/328
+										alignment: 'center',
+										image: logo_inferior,
+										margin:[0,0,0,0]
+									}
+								],
+								margin: 0
+							}						
+						}else{ //Sin membrete y con pie
+							return {
+								columns: [
+									{
+										alignment: 'center',
+										text: $("#nombre_centro").val()+'\n'+$("#direccion_centro").val()+'\n'+$("#email_centro").val(),
+										width:'*',
+										fontSize: 9,
+									}
+								],
+								margin: 20
+							}						
+						}
+					});					
+				
+
+                    doc.styles.tableHeader.alignment = 'left';
+                    doc.styles.tableHeader.margin = [5, 5, 5, 5];
+                    doc.pageMargins = [60, 120, 60, 80]; //del contenido, no del header ni footer
+					
+					
+					var objLayout = {};
+					objLayout['hLineWidth'] = function(i) { return .5; };
+					objLayout['vLineWidth'] = function(i) { return .5; };
+					objLayout['hLineColor'] = function(i) { return '#aaa'; };
+					objLayout['vLineColor'] = function(i) { return '#aaa'; };
+					//objLayout['paddingLeft'] = function(i) { return 4; };
+					//objLayout['paddingRight'] = function(i) { return 4; };
+					doc.content[0].layout = objLayout;
+                }
+            }, {
+                extend: 'print',
+                text: app.lang.dt_button_print,
+                footer: true,
+                exportOptions: {
+                    columns: [':not(.not-export)'],
+                    rows: function(index) {
+                        return _dt_maybe_export_only_selected_rows(index, table);
+                    },
+                    format: formatExport,
+                }
+            }],
+        });
+    }
+    var tableButtons = $("body").find('.table-btn');
+
+    $.each(tableButtons, function() {
+        var b = $(this);
+        if (b.length && b.attr('data-table')) {
+            if ($(table).is(b.attr('data-table'))) {
+                table_buttons_options.push({
+                    text: b.text().trim(),
+                    className: 'btn btn-default-dt-options',
+                    action: function(e, dt, node, config) {
+                        b.click();
+                    }
+                });
+            }
+        }
+    });
+
+    if (!$(table).hasClass('dt-inline')) {
+        table_buttons_options.push({
+            text: '<i class="fa fa-refresh"></i>',
+            className: 'btn btn-default-dt-options btn-dt-reload',
+            action: function(e, dt, node, config) {
+                dt.ajax.reload();
+            }
+        });
+    }
+	
+	if (!$(table).hasClass('dt-inline')) {
+		table_buttons_options.push({
+			text: '<i class="fa fa-table fa-fw" aria-hidden="true"></i>',
+			action: function (e, dt, node) {
+			    $(dt.table().node()).toggleClass('cards');
+				$('head', node).toggle();
+				$('.fa', node).toggleClass('fa-id-badge fa-table');
+				
+				console.log($('.fa', node));
+				   dt.draw('page');
+				},
+			className: 'btn btn-default-dt-options',
+			attr: {
+				   'title': 'Cambiar Vista',
+				   'data-toggle': 'tooltip',
+				}
+		});
+	}
+    // TODO
+    // console.log
+
+    /*   if ($(table).hasClass('customizable-table')) {
+            table_buttons_options.push({
+                columns: '.toggleable',
+                text: '<i class="fa fa-cog"></i>',
+                extend: 'colvis',
+                className: 'btn btn-default-dt-options dt-column-visibility',
+            });
+        }*/
+
+    return table_buttons_options;
+}

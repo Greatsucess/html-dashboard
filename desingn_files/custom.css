@@ -1,0 +1,914 @@
+/*
+*******************************
+GENERAL
+*******************************
+*/
+@font-face {
+    font-family: Basicfont;
+    src: url(Inter-SemiBold.ttf);
+}
+body {
+	font-family: Basicfont!important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:20px !important;
+}
+#side-menu li .nav-second-level li a {
+	padding: 7px 10px 7px 16px
+	}
+
+#side-menu li .nav-second-level li.active a {
+	border-radius: 0; width: 100%; 
+	margin: 0;
+	padding: 7px 10px 7px 16px;
+}
+
+#side-menu li .nav-second-level li a:hover {
+	background-color:#ebf5ff;
+}
+
+#side-menu li .nav-second-level li.active a:hover, #side-menu li .nav-second-level li.active a:focus {
+	background-color:#03a9f4
+}
+
+#side-menu li .nav-second-level li a:focus {
+	background-color: #ebf5ff;
+}
+	
+.alert-info {
+  position: relative;
+}
+
+.close {
+  float: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px; /* Needs to be half the height of the element (21/2) */
+}
+
+.alert-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.alert-info .fa-info-circle {
+    margin-right: 8px;
+    align-self: center; 
+}
+
+.active-menu-up {
+	background-color: #e3e8ee;
+}
+
+.active-menu-up>a:hover{
+	color: #323a45 !important;
+}
+
+.active-menu-up>a{
+	color: #323a45!important;
+}
+
+.has-error>label {
+      color: red;
+ }
+ 
+.textarea_sams{
+	line-height: 20px!important;
+}
+
+
+/*
+*******************************
+			INTRANET
+*******************************
+*/
+.parent {
+	display: flex;
+	margin:0px;
+	padding:0px;
+}
+
+ 
+
+.left {
+    overflow: hidden;
+    min-height: 50px;
+	padding-right: 50px;
+	border-right: 0px solid #333;
+}
+
+.right {
+    float: right;
+    width: 320px;
+    min-height: 50px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
+/*CARDS STYLE*/
+.cards tbody tr {
+	float: left;
+	width: 25rem;
+	margin: 1.5rem;
+	border: 0.0625rem solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.25);
+	position: relative;
+}
+
+.cards tbody td {
+	display: block;
+	border-top: 0px !important;
+}
+
+
+.cards tbody td p {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: -10px !important;
+}
+
+.cards tbody td h4 {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.cards .fa {
+    color: black;
+}
+
+.cards .foot {
+  bottom: 0;
+  position: absolute;
+  width:95%;
+}
+
+.cards .foot .lefty {
+	float: left;
+	padding-left: inherit;
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.cards .foot .righty {
+	float: right !important;
+	padding-right: inherit;
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-bottom: -10px !important;
+}
+
+.cards thead {
+   display: none;
+}
+
+.cards td:before {
+   content: attr(data-label);
+   position: relative;
+   float: left;
+   color: #808080;
+   min-width: 4rem;
+   margin-left: 0;
+   margin-right: 1rem;
+   text-align: left;
+}
+
+.cards IMG.displayed {
+    display: block;
+	width:100%;
+	height:auto;
+}
+
+.table .fa {
+    color: black;
+	padding: 3px;
+}
+
+.table #actions {
+	float: right;
+}
+
+IMG.displayed {
+    display: block;
+	width:150px;
+	height:auto;
+}
+
+.elfinder-button-search-menu{
+    top: 30px!important;
+    max-height: 660px;
+    z-index: 1001;
+}
+
+.bootstrap-tagsinput {
+	background-color: #fff;
+    border: 1px solid #bfcbd9;;
+    border-radius: 4px;
+    cursor: text;
+	font-family: Roboto !important;
+}
+
+.tagit-new > input{
+	font-family: Roboto !important;
+}
+
+.ui-widget-content.ui-autocomplete-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family:Roboto, Arial, Helvetica, sans-serif;
+  color: #333333;
+  background: none;
+  opacity: 1; /* Firefox */
+}
+
+tr.selected td:before {
+   color: #CCC;
+}
+
+.table .avatar {
+   width: 50px;
+}
+
+.cards .avatar {
+   width: 150px;
+   margin: 15px;
+}
+
+.mySingleField{
+	display:inline-block;
+}
+
+.custom_tagit-label{
+	font-size: 12px!important;
+	padding: 3px!important;
+}
+
+.cuerpo ol>li {
+	list-style: decimal;
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+.cuerpo ul>li {
+	list-style: inside;
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+#info_right_menu{
+	overflow:hidden;
+}
+
+.panel_ssss{
+ width:320px;
+}
+
+#info_article_icon {
+	margin-top: 1px;
+	display: inline-block;
+	font-size: 12px;
+	transition: transform 0.6s linear;
+	cursor: pointer;
+	border: 1px solid #dce1ef;
+    padding: 5px;
+	position: relative; 
+	left: 16px;
+	border-radius: 4px;
+	z-index:1;
+}
+
+#info_article_icon.reverse {
+	transform: rotateY(180deg);
+}
+
+
+/*
+*******************************
+	USUARIOS_PACIENTES
+*******************************
+*/
+.tabdisabled{
+	cursor: not-allowed;
+	color:#9c9c9c !important;
+}
+
+.fc-row.fc-week {
+    height: 196px;
+}
+
+.modal-body{
+	position: relative;
+    padding: 15px;
+}
+
+.control-group {
+    display: inline-block;
+    vertical-align: top;
+	width: 100px;
+}
+
+.keep-on-line {
+    white-space: nowrap;
+}
+
+.conf_centro_up{
+  display:inline-block;
+  width:100px;
+  text-align:right;
+}
+
+table.Datatable_bug_click thead th {
+	color: #4e75ad;
+    background: #f6f8fa;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    border-color: #ebf5ff!important;
+    font-size: 13px;
+    padding-top: 9px;
+    padding-bottom: 8px;
+}	
+
+/*
+*******************************
+	INTERDISCIPLINARIEDAD INFORMES
+*******************************
+*/
+.active_sams{
+	font-weight: bold;
+}
+
+.form-horizontal .control-label{
+    text-align: left !important;
+}
+
+#info_informe_icon {
+	margin-top: 0;
+	display: inline-block;
+	font-size: 12px;
+	transition: transform 0.6s linear;
+	cursor: pointer;
+	border: 1px solid #dce1ef;
+    padding: 5px;
+}
+
+#info_informe_icon.reverse {
+	transform: rotateY(180deg);
+}
+
+/*
+*******************************
+	PRESCRIPCIONES
+*******************************
+*/
+
+#info_prescripcion_icon {
+	margin-top: 0;
+	display: inline-block;
+	font-size: 12px;
+	transition: transform 0.6s linear;
+	cursor: pointer;
+	border: 1px solid #dce1ef;
+    padding: 5px;
+}
+
+#info_prescripcion_icon.reverse {
+	transform: rotateY(180deg);
+}
+
+.classcanvas{
+	border: 1px solid #bfcbd9;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #494949;
+	font-size: 14px;
+	-webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+	transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+	line-height: 1;
+	border-radius: 4px;
+}
+
+.classcanvasdisabled{
+	-webkit-touch: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+	border: 1px solid #bfcbd9;
+	border-radius: 4px;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+/*
+**********************************
+		CENTROS
+**********************************
+*/
+
+.conf_centro{
+  display:inline-block;
+  width:200px;
+  text-align:right;
+}
+
+
+.membrete-image-thumb {
+    height: 160px;
+ /*   width: 160px;
+    border-radius: 50%;*/
+}
+
+/*
+**********************************
+		CAMAS
+**********************************
+*/
+.center-foto-camas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.camasinfo  {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    /*margin-bottom: -10px !important;*/
+}
+
+.ff  {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    /*margin-bottom: -10px !important;*/
+}
+
+.cards IMG.displayedcamas {
+    display: block;
+	width:64px;
+	height:64px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.staff-profile-image-64{
+	height:64px;
+	width:64px;
+	border-radius:50%
+}
+
+.lista_camas{
+	padding: 2px 50px 2px 50px !important;
+}
+
+#lista_camas > ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: black; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+#lista_camas > ul li:last-child::before {
+   content: "+"; 
+}
+
+
+.table-camas.cards td:before {
+   content: attr(data-label);
+   position: relative;
+   float: left;
+   color: #000000;
+   min-width: 4rem;
+   margin-left: 0;
+   margin-right: 1rem;
+   text-align: left;
+   font-weight: bold;
+}
+
+.table-camas.cards .rightycama {
+	float: right !important;
+	padding-right: inherit;
+	margin-left: 10px !important;
+    margin-right: -15px !important;
+    margin-bottom: -10px !important;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modalloading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('/images/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .modalloading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modalloading {
+    display: block;
+}
+
+/*
+**********************************
+		PLAZAS
+**********************************
+*/
+.center-foto-plazas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plazasinfo  {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    /*margin-bottom: -10px !important;*/
+}
+
+.ff  {
+	margin-left: 10px !important;
+    margin-right: 10px !important;
+    /*margin-bottom: -10px !important;*/
+}
+
+.cards IMG.displayedplazas {
+    display: block;
+	width:64px;
+	height:64px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.staff-profile-image-64{
+	height:64px;
+	width:64px;
+	border-radius:50%
+}
+
+.lista_plazas{
+	padding: 0 50px 0 50px !important;
+}
+
+#lista_plazas > ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: black; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/*
+**********************************
+		ASIENTOS
+**********************************
+*/
+.wrappersquare {
+  position:relative
+}
+
+
+/*
+**********************************
+		TINYMCE
+**********************************
+*/
+
+
+.tox-checklist > li:not(.tox-checklist--hidden) {
+  list-style: none;
+  margin: 0.25em 0;
+  position: relative;
+}
+.tox-checklist > li:not(.tox-checklist--hidden)::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cg%20id%3D%22checklist-unchecked%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20id%3D%22Rectangle%22%20width%3D%2215%22%20height%3D%2215%22%20x%3D%22.5%22%20y%3D%22.5%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22%234C4C4C%22%20rx%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A");
+  cursor: pointer;
+  height: 1em;
+  margin-left: -1.5em;
+  margin-top: 0.125em;
+  position: absolute;
+  width: 1em;
+}
+.tox-checklist li:not(.tox-checklist--hidden).tox-checklist--checked::before {
+  content: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cg%20id%3D%22checklist-checked%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Crect%20id%3D%22Rectangle%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%234099FF%22%20fill-rule%3D%22nonzero%22%20rx%3D%222%22%2F%3E%3Cpath%20id%3D%22Path%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22nonzero%22%20d%3D%22M11.5703186%2C3.14417309%20C11.8516238%2C2.73724603%2012.4164781%2C2.62829933%2012.83558%2C2.89774797%20C13.260121%2C3.17069355%2013.3759736%2C3.72932262%2013.0909105%2C4.14168582%20L7.7580587%2C11.8560195%20C7.43776896%2C12.3193404%206.76483983%2C12.3852142%206.35607322%2C11.9948725%20L3.02491697%2C8.8138662%20C2.66090143%2C8.46625845%202.65798871%2C7.89594698%203.01850234%2C7.54483354%20C3.373942%2C7.19866177%203.94940006%2C7.19592841%204.30829608%2C7.5386474%20L6.85276923%2C9.9684299%20L11.5703186%2C3.14417309%20Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A");
+}
+
+/*
+***********************************************
+PLANES
+***********************************************
+*/
+.actionsplan {
+	float: right;
+	padding-bottom: 15px;
+
+}
+
+/*
+***********************************************
+CUADRANTE
+***********************************************
+*/
+.tc-content table.cuadrante {
+	border: 1px solid #dce1ef !important; 
+	box-shadow: 0 1px 15px 1px rgb(90 90 90 / 8%) !important; 
+	border-collapse: collapse !important;
+}
+.tc-content table.cuadrante>tbody>tr>td {
+	padding: 5px 10px 5px 10px !important; 
+	border: solid 1px #dce1ef !important;
+	}
+.tc-content table.cuadrante>tbody>tr>td:first-line {
+	color: #008ece !important; 
+	line-height: 2em !important; 
+	font-size: 85% !important;
+}
+.tc-content table.cuadrante>thead>tr>th {
+    padding: 5px 10px 5px 10px;
+    color: #4e75ad;
+    background: #f6f8fa;
+}
+
+/*No he querido tocar la clase de arriba de Fer*/
+table.cuadrante_pdf {
+	border: 1px solid #dce1ef !important; 
+	box-shadow: 0 1px 15px 1px rgb(90 90 90 / 8%) !important; 
+	border-collapse: collapse !important;
+}
+table.cuadrante_pdf>tbody>tr>td {
+	padding: 5px 10px 5px 10px !important; 
+	border: solid 1px #dce1ef !important;
+	}
+table.cuadrante_pdf>tbody>tr>td:first-line {
+	color: #008ece !important; 
+	line-height: 2em !important; 
+	font-size: 85% !important;
+}
+table.cuadrante_pdf>thead>tr>th {
+    padding: 5px 10px 5px 10px;
+    color: #4e75ad;
+    background: #f6f8fa;
+}
+
+/*
+***********************************************
+DIARIO DE EQUIPO
+***********************************************
+*/
+
+@media (max-width: 992px){
+	.diario_equipo{
+		flex-direction: column;
+	}
+	.intranet{
+		flex-direction: column;
+	}
+	.registros{
+		flex-direction: column;
+	}
+	.liquidacionesusuarios{
+		flex-direction: column;
+	}	
+	.planes{
+		flex-direction: column;
+	}
+	.prescripciones{
+		flex-direction: column;
+	}	
+	.protocolos{
+		flex-direction: column;
+	}	
+	.registros_abvd{
+		flex-direction: column;
+	}	
+	#info_article_icon{
+		display:none;
+	}
+}
+
+
+
+.red.onoffswitch-checkbox:checked+.onoffswitch-label {
+    background-color: red;
+}
+
+.red.onoffswitch-checkbox:checked+.onoffswitch-label,
+.red.onoffswitch-checkbox:checked+.onoffswitch-label:before {
+    border-color: red;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0 0 0 25px;
+}
+.header-right .search-section {
+	position: relative;
+}
+.header-right .search-section .search-bar {
+	padding: 5px 10px 5px 30px;
+ 
+}
+ 
+.header-right .search-section svg {
+	position: absolute;
+	color: #494949;
+	top: 12px;
+	left: 15px;
+
+
+}
+#side-menu {
+	font-family: 'inherit'!important;
+	padding-left: 10px!important;
+	font-weight: 700;
+}
+.divid-text{
+	/* font-family:'inherit'!important; */
+	font-size: 12px;
+	color: rgb(0,0,0,0.6);
+}
+.svg-size {
+	width: 30px;  margin-bottom: 6px;
+}
+.sidebar .nav > li > a {
+	padding: 0 10px!important;
+	border-left: solid 3px transparent;
+	color: rgba(0,0,0,0.7)!important;
+	
+}
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:active,
+.sidebar .nav > li > a:focus {
+	background: transparent!important;
+	color: #2a73f5!important;
+	border-left: solid 3px #2a73f5;
+}
+
+.divid-text{
+	padding: 10px 0;
+	font-family: Basicfont!important;
+}
+.divid-line {
+	font-size: 12px;
+	padding: 10px 0;
+	margin-left: 15px;
+}
+.sidebar .nav > li > a > span {
+	margin-left: 5px;
+	font-family: Basicfont!important;
+	
+}
+.nav-second-level {
+	padding-left: 15px;
+}
+.nav-second-level menu-text:hover {
+	color: #2a73f5;
+	border-left: transparent!important;
+} 
+.sidebar .nav > li > ul > li > a:hover {
+	color: #2a73f5;
+	border-left: solid 3px transparent!important;
+
+}
+.user-info {
+	display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 20px;
+	padding: 15px;
+}
+.right-header-section {
+	display: flex;
+	align-items: center;
+	margin-right: 26px;
+	justify-content: space-between;
+}
+.user-info-dropdown {
+	position: absolute;
+	left: -175px;
+	top: 30px;
+}
+.hambgar-style-button {
+	border: none;
+	background: transparent;
+	text-align: center;
+	position: relative;
+ 
+}
+.mobile {
+	display: none;
+}
+.hambgar-style-button:hover svg {
+	color: #2a73f5;
+}
+.mobile-nav,.mobile-div {
+	position: absolute;
+}
+.menu-header {
+	position: absolute;
+	bottom: 70px;
+	left: 7px;
+}
+@media (max-width: 1260px) {
+	
+}
+
+@media only screen and (max-width: 1260px) {
+	.navbar-right {
+	  display: none!important;
+ 	}
+	.mobile {
+		display: block;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+  }
+
+ .divid-line {
+	display: none;
+ }
+ .divid-line > hr {
+	width: 50px;
+	background-color: rgba(0,0,0,0.8);
+ }
+ .user-info-dropdown li{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+ }
+ .user-profile-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgba(0,0,0,0.5);
+
+ }
+ .user-info-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgba(0,0,0,0.5);
+ }
+ .user-image img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-top: 15px;
+
+ }
+.user-profile-name {
+	margin-top: 10px;
+	font-size: 15px;
+	color: rgba(0,0,0,0.8);
+ }
+ .user-info-list .user-mail {
+	margin-top: 5px;
+ } 
+ .user-role {
+	margin-top: 10px;
+	font-size: 11px;
+	margin-bottom: 15px;
+ }
+
+ .expand-sidebar {
+	display: none;
+ }
+ .collapse-sidebar {
+	display: flex;
+	align-items: center;
+	color: rgba(0,0,0,0.3);
+ }
+ .divider-line {
+    color: rgba(0,0,0,0.5);
+    border-top: solid 1px rgba(0,0,0,0.2);
+    /* margin-top: 15px; */
+    width: 180px;
+    margin-left: 20px;
+    padding-top: 10px;
+ }
+ .divid-line-draw {
+	width: 150px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+ }

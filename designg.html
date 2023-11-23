@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://cxdes.com/admin/gestioncentros/traslado_pacientes -->
+<html lang="es" data-lt-installed="true">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      type="text/javascript"
+      src="./desingn_files/7003.js.descarga"
+      async="async"
+    ></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>cxde</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    <link
+      rel="shortcut icon"
+      id="favicon"
+      href="https://cxdes.com/uploads/company/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon”"
+      id="favicon-apple-touch-icon"
+      href="https://cxdes.com/uploads/company/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="reset-css"
+      href="./desingn_files/reset.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="reset-css"
+      href="./desingn_files/icons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="roboto-css"
+      href="./desingn_files/roboto.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="vendor-css"
+      href="./desingn_files/vendor-admin.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="fontawesome-css"
+      href="./desingn_files/all.css"
+    />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    id="fontawesome-css"
+    href="./desingn_files/fontawesome.css"
+  />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="app-css"
+      href="./desingn_files/style.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      id="custom-css"
+      href="./desingn_files/custom.css"
+    />
+    <script>
+      var site_url = "https://cxdes.com/";
+      var admin_url = "https://cxdes.com/admin/";
+      var app = {};
+      var app = {};
+      app.available_tags = ["prueba"];
+      app.available_tags_ids = ["1"];
+      app.user_recent_searches = [];
+      app.months_json = [
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre",
+      ];
+      app.tinymce_lang = "es";
+      app.locale = "es";
+      app.browser = "chrome";
+      app.user_language = "";
+      app.is_mobile = "";
+      app.user_is_staff_member = "1";
+      app.user_is_admin = "1";
+      app.max_php_ini_upload_size_bytes = "104857600";
+      app.calendarIDs = "";
+      app.options = {};
+      app.lang = {};
+      app.options.date_format = "d/m/Y";
+      app.options.decimal_places = "2";
+      app.options.scroll_responsive_tables = "0";
+      app.options.company_is_required = "1";
+      app.options.default_view_calendar = "month";
+      app.options.calendar_events_limit = "4";
+      app.options.tables_pagination_limit = "25";
+      app.options.time_format = "24";
+      app.options.decimal_separator = ",";
+      app.options.thousand_separator = ".";
+      app.options.timezone = "Europe/Madrid";
+      app.options.calendar_first_day = "1";
+      app.options.allowed_files =
+        ".png,.jpg,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar,.txt,.csv,.docx,.odt,.ods";
+      app.options.desktop_notifications = "0";
+      app.options.show_table_export_button = "to_all";
+      app.options.has_permission_tasks_checklist_items_delete = "1";
+      app.options.show_setup_menu_item_only_on_hover = "0";
+      app.options.newsfeed_maximum_files_upload = "10";
+      app.options.dismiss_desktop_not_after = "0";
+      app.options.enable_google_picker = "1";
+      app.options.google_client_id = "";
+      app.options.google_api = "";
+      app.lang.invoice_task_billable_timers_found =
+        "Temporizadores iniciadas encontrados";
+      app.lang.validation_extension_not_allowed =
+        "Esta extesión de archivo no es válida";
+      app.lang.tag = "Etiqueta";
+      app.lang.options = "Opciones";
+      app.lang.no_items_warning = "Introduzca al menos un elemento.";
+      app.lang.item_forgotten_in_preview =
+        "¿Has olvidado agregar este artículo?";
+      app.lang.new_notification = "¡Nueva notificación!";
+      app.lang.estimate_number_exists =
+        "Este número de estimación existe para el año en curso.";
+      app.lang.invoice_number_exists =
+        "Este número de factura existe para el año en curso.";
+      app.lang.confirm_action_prompt =
+        "¿Estás seguro de querer realizar esta acción?";
+      app.lang.calendar_expand = "Expandir";
+      app.lang.media_files = "Archivos";
+      app.lang.credit_note_number_exists =
+        "La numeración de la nota de crédito ya existe";
+      app.lang.item_field_not_formatted =
+        "La tasa en el campo de entrada no está formateada, editar/añadir el artículo y debe seguir siendo no formateado. No intente dar formato manualmente aquí.";
+      app.lang.email_exists = "Email ya enviado";
+      app.lang.phonenumber_exists = "Phone number already exists";
+      app.lang.website_exists = "Website already exists";
+      app.lang.company_exists = "Company already exists";
+      app.lang.filter_by = "Filtrar por";
+      app.lang.you_can_not_upload_any_more_files =
+        "Ya no puedes cargars archivos.";
+      app.lang.cancel_upload = "Cancelar subida";
+      app.lang.browser_not_support_drag_and_drop =
+        "Tu navegador no soporte la opción de dejar caer archivo para cargar.";
+      app.lang.drop_files_here_to_upload =
+        "Dejar caer archivo aqui para cargar";
+      app.lang.file_exceeds_max_filesize =
+        "El archivo subido excede la directiva peso máximo permitido (upload_max_filesize) (100 MB)";
+      app.lang.file_exceeds_maxfile_size_in_form =
+        "El archivo subido excede la directiva mAX_FILE_SIZE que se especificó en el formulario HTML (100 MB)";
+      app.lang.unit = "Unidad";
+      app.lang.dt_length_menu_all = "Todo";
+      app.lang.dt_button_reload = "Actualizar";
+      app.lang.dt_button_excel = "Excel";
+      app.lang.dt_button_csv = "CSV";
+      app.lang.dt_button_pdf = "PDF";
+      app.lang.dt_button_print = "Imprimir";
+      app.lang.dt_button_export = "Exportar";
+      app.lang.search_ajax_empty = "Seleccione y comience a escribir";
+      app.lang.search_ajax_initialized = "Comienza a escribir para buscar";
+      app.lang.search_ajax_searching = "Buscando…";
+      app.lang.not_results_found = "No se encontraron resultados";
+      app.lang.search_ajax_placeholder = "Escribe para buscar…";
+      app.lang.currently_selected = "Actualmente seleccionado";
+      app.lang.task_stop_timer = "Detener temporizador";
+      app.lang.dt_button_column_visibility = "Visibilidad";
+      app.lang.note = "Nota";
+      app.lang.search_tasks = "Buscar tareas";
+      app.lang.confirm = "Confirmar";
+      app.lang.showing_billable_tasks_from_project =
+        "Mostrar tareas facturables del proyecto";
+      app.lang.invoice_task_item_project_tasks_not_included =
+        "Los proyectos de las tareas no están incluidos en esta lista.";
+      app.lang.credit_amount_bigger_then_invoice_balance =
+        "El importe total de crédito es superior al importe pendiente de la factura";
+      app.lang.credit_amount_bigger_then_credit_note_remaining_credits =
+        "La cantidad total de crédito es mayor que los créditos restantes";
+      app.lang.save = "Guardar";
+      app.lang.expense = "Gastos";
+      app.lang.ticket = "ticket";
+      app.lang.lead = "Cliente potencial";
+      app.lang.create_reminder = "Crear recordatorio";
+      app.lang.datatables = {
+        emptyTable: "No se encontraron entradas",
+        info: "Mostrando _TOTAL_ entradas",
+        infoEmpty: "Mostrando 0 al 0 de 0 entradas",
+        infoFiltered: " ",
+        lengthMenu: "_MENU_",
+        loadingRecords: "Cargando\u2026",
+        processing: '<div class="dt-loader"><\/div>',
+        search:
+          '<div class="input-group"><span class="input-group-addon"><span class="fa fa-search"><\/span><\/span>',
+        searchPlaceholder: "Buscar:",
+        zeroRecords: "No se encontraron coincidencias",
+        paginate: {
+          first: "Primero",
+          last: "\u00daltimo",
+          next: "Siguiente",
+          previous: "Anterior",
+        },
+        aria: {
+          sortAscending: "Activar para ordenar la columna ascendente",
+          sortDescending: "Activar para ordenar la columna descendente",
+        },
+      };
+      var app_language = "",
+        app_is_mobile = "",
+        app_user_browser = "chrome",
+        app_date_format = "d/m/Y",
+        app_decimal_places = "2",
+        app_scroll_responsive_tables = "0",
+        app_company_is_required = "1",
+        app_default_view_calendar = "month",
+        app_calendar_events_limit = "4",
+        app_tables_pagination_limit = "25",
+        app_time_format = "24",
+        app_decimal_separator = ",",
+        app_thousand_separator = ".",
+        app_timezone = "Europe/Madrid",
+        app_calendar_first_day = "1",
+        app_allowed_files =
+          ".png,.jpg,.pdf,.doc,.docx,.xls,.xlsx,.zip,.rar,.txt,.csv,.docx,.odt,.ods",
+        app_desktop_notifications = "0",
+        max_php_ini_upload_size_bytes = "104857600",
+        app_show_table_export_button = "to_all",
+        calendarIDs = "",
+        is_admin = "1",
+        is_staff_member = "1",
+        has_permission_tasks_checklist_items_delete = "1",
+        app_show_setup_menu_item_only_on_hover = "0",
+        app_newsfeed_maximum_files_upload = "10",
+        app_dismiss_desktop_not_after = "0",
+        app_enable_google_picker = "1",
+        app_google_client_id = "",
+        google_api = "";
+      var appLang = {};
+      appLang["invoice_task_billable_timers_found"] =
+        "Temporizadores iniciadas encontrados";
+      appLang["validation_extension_not_allowed"] =
+        "Esta extesión de archivo no es válida";
+      appLang["tag"] = "Etiqueta";
+      appLang["options"] = "Opciones";
+      appLang["no_items_warning"] = "Introduzca al menos un elemento.";
+      appLang["item_forgotten_in_preview"] =
+        "¿Has olvidado agregar este artículo?";
+      appLang["new_notification"] = "¡Nueva notificación!";
+      appLang["estimate_number_exists"] =
+        "Este número de estimación existe para el año en curso.";
+      appLang["invoice_number_exists"] =
+        "Este número de factura existe para el año en curso.";
+      appLang["confirm_action_prompt"] =
+        "¿Estás seguro de querer realizar esta acción?";
+      appLang["calendar_expand"] = "Expandir";
+      appLang["media_files"] = "Archivos";
+      appLang["credit_note_number_exists"] =
+        "La numeración de la nota de crédito ya existe";
+      appLang["item_field_not_formatted"] =
+        "La tasa en el campo de entrada no está formateada, editar/añadir el artículo y debe seguir siendo no formateado. No intente dar formato manualmente aquí.";
+      appLang["email_exists"] = "Email ya enviado";
+      appLang["phonenumber_exists"] = "Phone number already exists";
+      appLang["website_exists"] = "Website already exists";
+      appLang["company_exists"] = "Company already exists";
+      appLang["filter_by"] = "Filtrar por";
+      appLang["you_can_not_upload_any_more_files"] =
+        "Ya no puedes cargars archivos.";
+      appLang["cancel_upload"] = "Cancelar subida";
+      appLang["browser_not_support_drag_and_drop"] =
+        "Tu navegador no soporte la opción de dejar caer archivo para cargar.";
+      appLang["drop_files_here_to_upload"] =
+        "Dejar caer archivo aqui para cargar";
+      appLang["file_exceeds_max_filesize"] =
+        "El archivo subido excede la directiva peso máximo permitido (upload_max_filesize) (100 MB)";
+      appLang["file_exceeds_maxfile_size_in_form"] =
+        "El archivo subido excede la directiva mAX_FILE_SIZE que se especificó en el formulario HTML (100 MB)";
+      appLang["unit"] = "Unidad";
+      appLang["dt_length_menu_all"] = "Todo";
+      appLang["dt_button_reload"] = "Actualizar";
+      appLang["dt_button_excel"] = "Excel";
+      appLang["dt_button_csv"] = "CSV";
+      appLang["dt_button_pdf"] = "PDF";
+      appLang["dt_button_print"] = "Imprimir";
+      appLang["dt_button_export"] = "Exportar";
+      appLang["search_ajax_empty"] = "Seleccione y comience a escribir";
+      appLang["search_ajax_initialized"] = "Comienza a escribir para buscar";
+      appLang["search_ajax_searching"] = "Buscando…";
+      appLang["not_results_found"] = "No se encontraron resultados";
+      appLang["search_ajax_placeholder"] = "Escribe para buscar…";
+      appLang["currently_selected"] = "Actualmente seleccionado";
+      appLang["task_stop_timer"] = "Detener temporizador";
+      appLang["dt_button_column_visibility"] = "Visibilidad";
+      appLang["note"] = "Nota";
+      appLang["search_tasks"] = "Buscar tareas";
+      appLang["confirm"] = "Confirmar";
+      appLang["showing_billable_tasks_from_project"] =
+        "Mostrar tareas facturables del proyecto";
+      appLang["invoice_task_item_project_tasks_not_included"] =
+        "Los proyectos de las tareas no están incluidos en esta lista.";
+      appLang["credit_amount_bigger_then_invoice_balance"] =
+        "El importe total de crédito es superior al importe pendiente de la factura";
+      appLang["credit_amount_bigger_then_credit_note_remaining_credits"] =
+        "La cantidad total de crédito es mayor que los créditos restantes";
+      appLang["save"] = "Guardar";
+      appLang["expense"] = "Gastos";
+      appLang["ticket"] = "ticket";
+      appLang["lead"] = "Cliente potencial";
+      appLang["create_reminder"] = "Crear recordatorio";
+    </script>
+    <script>
+      var totalUnreadNotifications = 0,
+        proposalsTemplates = [],
+        contractsTemplates = [],
+        billingAndShippingFields = [
+          "billing_street",
+          "billing_city",
+          "billing_state",
+          "billing_zip",
+          "billing_country",
+          "shipping_street",
+          "shipping_city",
+          "shipping_state",
+          "shipping_zip",
+          "shipping_country",
+        ],
+        isRTL = "false",
+        taskid,
+        taskTrackingStatsData,
+        taskAttachmentDropzone,
+        taskCommentAttachmentDropzone,
+        newsFeedDropzone,
+        expensePreviewDropzone,
+        taskTrackingChart,
+        cfh_popover_templates = {},
+        _table_api;
+    </script>
+    <script>
+      if (typeof jQuery === "undefined" && !window.deferAfterjQueryLoaded) {
+        window.deferAfterjQueryLoaded = [];
+        Object.defineProperty(window, "$", {
+          set: function (value) {
+            window.setTimeout(function () {
+              $.each(window.deferAfterjQueryLoaded, function (index, fn) {
+                fn();
+              });
+            }, 0);
+            Object.defineProperty(window, "$", {
+              value: value,
+            });
+          },
+          configurable: true,
+        });
+      }
+      var csrfData = {
+        formatted: { csrf_token_name: "1b2d77050a1554178d39c46d73ae2bae" },
+        token_name: "csrf_token_name",
+        hash: "1b2d77050a1554178d39c46d73ae2bae",
+      };
+      if (typeof jQuery == "undefined") {
+        window.deferAfterjQueryLoaded.push(function () {
+          csrf_jquery_ajax_setup();
+        });
+        window.addEventListener(
+          "load",
+          function () {
+            csrf_jquery_ajax_setup();
+          },
+          true
+        );
+      } else {
+        csrf_jquery_ajax_setup();
+      }
+
+      function csrf_jquery_ajax_setup() {
+        $.ajaxSetup({
+          data: csrfData.formatted,
+        });
+
+        $(document).ajaxError(function (event, request, settings) {
+          if (request.status === 419) {
+            alert_float(
+              "warning",
+              "Page expired, refresh the page make an action."
+            );
+          }
+        });
+      }
+    </script>
+    <script>
+      var leadUniqueValidationFields = ["email"];
+      var leadAttachmentsDropzone;
+    </script>
+    <link href="./desingn_files/style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./desingn_files/style(1).css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body
+    class="app admin gestioncentros traslado_pacientes user-id-3886 chrome"
+    cz-shortcut-listen="true"
+  >
+    <style>
+      .dropdown-menu {
+        max-height: 480px;
+        overflow-y: auto;
+      }
+    </style>
+
+    <div id="mobile-search" class="hide">
+      <ul></ul>
+    </div>
+    <div id="setup-menu-wrapper" class="animated" style="min-height: 862px">
+      <ul class="nav metis-menu" id="setup-menu">
+        <li>
+          <a class="close-customizer"><i class="fa fa-close"></i></a>
+          <span class="text-left bold customizer-heading">Configuración</span>
+        </li>
+        <li class="menu-item-staff">
+          <a href="https://cxdes.com/admin/staff" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text">Equipo</span>
+          </a>
+        </li>
+        <li class="menu-item-customers">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <i class="menu-icon"></i>
+            <span class="menu-text">Clientes</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="sub-menu-item-customer-groups">
+              <a href="https://cxdes.com/admin/clients/groups">
+                <span class="sub-menu-text">Tipo de cliente</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-support">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <i class="menu-icon"></i>
+            <span class="menu-text">Soporte</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="sub-menu-item-departments">
+              <a href="https://cxdes.com/admin/departments">
+                <span class="sub-menu-text">Departamentos</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-tickets-predefined-replies">
+              <a href="https://cxdes.com/admin/tickets/predefined_replies">
+                <span class="sub-menu-text">Respuestas predefinidas</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-tickets-priorities">
+              <a href="https://cxdes.com/admin/tickets/priorities">
+                <span class="sub-menu-text">Prioridad de tickets</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-tickets-statuses">
+              <a href="https://cxdes.com/admin/tickets/statuses">
+                <span class="sub-menu-text">Estados de tickets</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-tickets-services">
+              <a href="https://cxdes.com/admin/tickets/services">
+                <span class="sub-menu-text">Servicios</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-tickets-spam-filters">
+              <a href="https://cxdes.com/admin/spam_filters/view/tickets">
+                <span class="sub-menu-text">Filtros de SPAM</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-leads">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <i class="menu-icon"></i>
+            <span class="menu-text">Clientes potenciales</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="sub-menu-item-leads-sources">
+              <a href="https://cxdes.com/admin/leads/sources">
+                <span class="sub-menu-text">Fuentes</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-leads-statuses">
+              <a href="https://cxdes.com/admin/leads/statuses">
+                <span class="sub-menu-text">Estados</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-leads-email-integration">
+              <a href="https://cxdes.com/admin/leads/email_integration">
+                <span class="sub-menu-text">Integración de email</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-web-to-lead">
+              <a href="https://cxdes.com/admin/leads/forms">
+                <span class="sub-menu-text">Contacto desde web</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-finance">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <i class="menu-icon"></i>
+            <span class="menu-text">Presupuestos</span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="sub-menu-item-taxes">
+              <a href="https://cxdes.com/admin/taxes">
+                <span class="sub-menu-text">Impuestos</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-currencies">
+              <a href="https://cxdes.com/admin/currencies">
+                <span class="sub-menu-text">Monedas</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-payment-modes">
+              <a href="https://cxdes.com/admin/paymentmodes">
+                <span class="sub-menu-text">Modos de pago</span>
+              </a>
+            </li>
+            <li class="sub-menu-item-expenses-categories">
+              <a href="https://cxdes.com/admin/expenses/categories">
+                <span class="sub-menu-text">Categorías de gastos</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-contracts">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Contratos </span>
+            <span class="fa arrow"></span>
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="sub-menu-item-contracts-types">
+              <a href="https://cxdes.com/admin/contracts/types">
+                <span class="sub-menu-text"> Tipos de contratos </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item-modules">
+          <a href="https://cxdes.com/admin/modules" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Módulos </span>
+          </a>
+        </li>
+        <li class="menu-item-email-templates">
+          <a href="https://cxdes.com/admin/emails" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Plantillas de email </span>
+          </a>
+        </li>
+        <li class="menu-item-custom-fields">
+          <a href="https://cxdes.com/admin/custom_fields" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Campos personalizados </span>
+          </a>
+        </li>
+        <li class="menu-item-gdpr">
+          <a href="https://cxdes.com/admin/gdpr" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> GDPR </span>
+          </a>
+        </li>
+        <li class="menu-item-roles">
+          <a href="https://cxdes.com/admin/roles" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Roles </span>
+          </a>
+        </li>
+        <li class="menu-item-settings">
+          <a href="https://cxdes.com/admin/settings" aria-expanded="false">
+            <i class="menu-icon"></i>
+            <span class="menu-text"> Ajustes </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://help.perfexcrm.com/" target="_blank"> Ayuda </a>
+        </li>
+      </ul>
+    </div>
+    <aside id="menu" class="sidebar">
+      <ul class="nav metis-menu" id="side-menu">
+      <!-- <li class="dashboard_user">
+			Bienvenido Carlos <i class="fa fa-power-off top-left-logout pull-right" data-toggle="tooltip" data-title="Cerrar sesión" data-placement="right" onclick="logout(); return false;"></i>
+		  </li> -->
+
+        <div class="divid-text">CUIDADO DE PACIENTES</div>
+        <div class="divid-line">........</div>
+        <li class="active">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              class="svg-size"
+              style="enable-background: new 0 0 128 128"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M65.6,28.1c1.2,0,2.2-1,2.2-2.2v-7c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2v7C63.4,27.1,64.4,28.1,65.6,28.1
+                z"
+                />
+                <path
+                  class="st0"
+                  d="M53.5,29.8c0.4,0.6,1.1,1,1.9,1c0.4,0,0.8-0.1,1.2-0.3c0.5-0.3,0.8-0.8,1-1.4c0.1-0.6,0-1.2-0.3-1.7l-3.8-5.9
+                c-0.4-0.6-1.1-1-1.9-1c-0.4,0-0.8,0.1-1.2,0.3c-0.5,0.3-0.8,0.8-1,1.4c-0.1,0.6,0,1.2,0.3,1.7L53.5,29.8z"
+                />
+                <path
+                  class="st0"
+                  d="M74.7,30.4c0.4,0.2,0.8,0.3,1.2,0.3c0.8,0,1.5-0.4,1.9-1l3.8-5.9c0.3-0.5,0.4-1.1,0.3-1.7
+                c-0.1-0.6-0.5-1.1-1-1.4c-0.4-0.2-0.8-0.3-1.2-0.3c-0.8,0-1.5,0.4-1.9,1L74,27.4c-0.3,0.5-0.4,1.1-0.3,1.7
+                C73.8,29.6,74.2,30.1,74.7,30.4z"
+                />
+                <path
+                  class="st0"
+                  d="M52.5,61h-5v-5c0-1.2-1-2.2-2.2-2.2h-9.8c-1.2,0-2.2,1-2.2,2.2v5h-5c-1.2,0-2.2,1-2.2,2.2V73
+                c0,1.2,1,2.2,2.2,2.2h5v5c0,1.2,1,2.2,2.2,2.2h9.8c1.2,0,2.2-1,2.2-2.2v-5h5c1.2,0,2.2-1,2.2-2.2v-9.8C54.8,62,53.8,61,52.5,61z
+                M50.3,70.7h-5c-1.2,0-2.2,1-2.2,2.2v5h-5.3v-5c0-1.2-1-2.2-2.2-2.2h-5v-5.3h5c1.2,0,2.2-1,2.2-2.2v-5h5.3v5c0,1.2,1,2.2,2.2,2.2h5
+                V70.7z"
+                />
+                <path
+                  class="st0"
+                  d="M115.1,73.6h-6.3L99.5,59c-0.4-0.6-1.1-1-1.9-1H81.8V44.8c0-1.2-1-2.2-2.2-2.2h-4.2v-1.8
+                c0-5.4-4.4-9.8-9.8-9.8c-5.4,0-9.8,4.4-9.8,9.8v1.8H12.9c-1.2,0-2.2,1-2.2,2.2V99c0,1.2,1,2.2,2.2,2.2h7.8
+                c1,5.7,6.1,10.1,12.1,10.1c6,0,11-4.3,12.1-10.1h39.8c1,5.7,6.1,10.1,12.1,10.1c6,0,11-4.3,12.1-10.1h6.3c1.2,0,2.2-1,2.2-2.2V75.8
+                C117.3,74.5,116.4,73.6,115.1,73.6z M60.3,40.8c0-3,2.4-5.4,5.4-5.4c3,0,5.4,2.4,5.4,5.4v1.8H60.3V40.8z M40.6,99.1
+                c0,4.3-3.5,7.8-7.8,7.8c-4.3,0-7.8-3.5-7.8-7.8c0,0,0,0,0,0s0,0,0,0c0-4.3,3.5-7.8,7.8-7.8C37.1,91.2,40.6,94.7,40.6,99.1
+                C40.6,99,40.6,99,40.6,99.1C40.6,99.1,40.6,99.1,40.6,99.1z M77.4,60.2v36.7H44.9c-1-5.7-6.1-10.1-12.1-10.1c-6,0-11,4.3-12.1,10.1
+                h-5.6V47.1H58c0,0,0,0,0,0c0,0,0,0,0,0h15.1c0,0,0,0,0,0s0,0,0,0h4.1V60.2z M104.6,99.1c0,4.3-3.5,7.8-7.8,7.8
+                c-4.3,0-7.8-3.5-7.8-7.8c0,0,0,0,0,0s0,0,0,0c0-4.3,3.5-7.8,7.8-7.8C101.1,91.2,104.6,94.7,104.6,99.1
+                C104.6,99,104.6,99,104.6,99.1C104.6,99.1,104.6,99.1,104.6,99.1z M112.9,96.8h-4.1c-1-5.7-6.1-10.1-12.1-10.1s-11,4.3-12.1,10.1
+                h-2.9V62.4h14.6l9.3,14.6c0.4,0.6,1.1,1,1.9,1h5.3V96.8z"
+                />
+                <path
+                  class="st0"
+                  d="M99,73.8H88.9v-5.7c0-1.2-1-2.2-2.2-2.2c-1.2,0-2.2,1-2.2,2.2v8c0,1.2,1,2.2,2.2,2.2H99c1.2,0,2.2-1,2.2-2.2
+                C101.2,74.8,100.2,73.8,99,73.8z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Traslado pacientes</span></a
+          >
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/usuarios-pacientes"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M79.5,76.5c-1.1,0-2.1,0.9-2.1,2.1v32.6c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V78.5
+                C81.6,77.4,80.7,76.5,79.5,76.5z"
+                />
+                <path
+                  class="st0"
+                  d="M62.1,28.6c0-7.6-6.2-13.8-13.9-13.8S34.4,21,34.4,28.6c0,3.9,1.6,7.4,4.3,9.9C28.3,40,22.8,47.4,22.8,60.2
+                v12.6c0,5.4,4.4,9.8,9.8,9.8v28.6c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V57.6c0-1.1-0.9-2.1-2.1-2.1s-2.1,0.9-2.1,2.1v20.8
+                c-3.1-0.1-5.6-2.6-5.6-5.7V60.2c0-12.1,4.9-17.8,15.5-17.8h5.9c0,0,0,0,0,0C56,42.3,62.1,36.2,62.1,28.6z M48.2,18.9
+                c5.4,0,9.7,4.3,9.7,9.7s-4.4,9.7-9.7,9.7s-9.7-4.3-9.7-9.7S42.9,18.9,48.2,18.9z"
+                />
+                <path
+                  class="st0"
+                  d="M89.2,38.5c2.6-2.5,4.2-6,4.2-9.9c0-7.6-6.2-13.8-13.9-13.8S65.7,21,65.7,28.6c0,3.9,1.6,7.4,4.3,9.9
+                C59.6,40,54.1,47.4,54.1,60.2v12.6c0,5.4,4.4,9.8,9.8,9.8v28.6c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V57.6c0-1.1-0.9-2.1-2.1-2.1
+                s-2.1,0.9-2.1,2.1v20.8c-3.1-0.1-5.6-2.6-5.6-5.7V60.2c0-12.1,4.9-17.8,15.5-17.8h5.9h5.9c10.6,0,15.5,5.6,15.5,17.8v12.6
+                c0,3.1-2.5,5.7-5.7,5.7V57.6c0-1.1-0.9-2.1-2.1-2.1s-2.1,0.9-2.1,2.1v53.6c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V82.6
+                c5.4,0,9.8-4.4,9.8-9.8V60.2C105.2,47.3,99.7,39.9,89.2,38.5z M79.5,18.9c5.4,0,9.7,4.3,9.7,9.7s-4.4,9.7-9.7,9.7s-9.7-4.3-9.7-9.7
+                S74.2,18.9,79.5,18.9z"
+                />
+              </g>
+            </svg>
+            <span class="menu-text">Usuarios-pacientes</span></a
+          >
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M106.1,100C105,92,99.6,85.2,92,82.3l-15.1-5.8v-5.2c5.2-5.5,6.3-14.2,7.1-20.9l0.2-1.3
+                c0.3-2.4,0.5-5.1,0.3-7.7V31.1c0-3.5-2.1-6.8-6.3-9.6c-8.4-5.7-19.8-5.7-28.2,0c-4.2,2.8-6.3,6.1-6.3,9.6v10.7
+                c-0.2,2.5,0,4.9,0.3,7.2l0.2,1.3c0.8,6.7,1.9,15.4,7.1,20.9v5.2l-15.1,5.8C28.4,85.2,23,92,21.9,100l-1.1,8.1
+                c-0.2,1.3,0.7,2.5,2,2.7c0.1,0,0.2,0,0.3,0c1.2,0,2.2-0.9,2.4-2.1l1.1-8.1c0.8-6.3,5.1-11.7,11-13.9l13.9-5.3
+                c2.1,7.5,10.8,13,11.2,13.2c0.4,0.2,0.8,0.4,1.3,0.4c0.4,0,0.9-0.1,1.3-0.4c0.4-0.3,9.1-5.7,11.2-13.2l13.9,5.3
+                c6,2.3,10.2,7.6,11,13.9l1.1,8.1c0.2,1.2,1.2,2.1,2.4,2.1c0.1,0,0.2,0,0.3,0c1.3-0.2,2.2-1.4,2-2.7L106.1,100z M48.2,31.1
+                c0-1.9,1.4-3.9,4.3-5.8c6.9-4.7,16.1-4.7,23,0c2.8,1.9,4.3,3.9,4.3,5.8v11.3H48.2V31.1z M64,89.7c-3.1-2.3-8.2-7-8.2-11.6v-3.4
+                c0.2,0.1,0.4,0.2,0.6,0.3c1.2,0.5,2.6,0,3.1-1.3c0.5-1.2,0-2.6-1.2-3.1c-1.2-0.5-2.3-1.3-3.2-2.1c0,0,0,0,0,0
+                c-4.6-4.3-5.6-12.2-6.4-18.8l-0.2-1.3c-0.1-0.5-0.1-0.9-0.1-1.4h31.1c0,0.5-0.1,0.9-0.1,1.4l-0.2,1.3c-0.8,6.6-1.7,14.5-6.4,18.8
+                c0,0,0,0,0,0c-0.9,0.9-2,1.6-3.2,2.1c-1.2,0.5-1.8,1.9-1.2,3.1c0.4,0.9,1.3,1.4,2.2,1.4c0.3,0,0.6-0.1,0.9-0.2
+                c0.2-0.1,0.4-0.2,0.6-0.3v3.4C72.2,82.8,67.1,87.5,64,89.7z"
+                />
+                <path
+                  class="st0"
+                  d="M68.9,29.8h-2.6v-2.6c0-1.3-1-2.3-2.3-2.3c-1.3,0-2.3,1-2.3,2.3v2.6h-2.6c-1.3,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3
+                h2.6V37c0,1.3,1,2.3,2.3,2.3c1.3,0,2.3-1,2.3-2.3v-2.6h2.6c1.3,0,2.3-1,2.3-2.3S70.1,29.8,68.9,29.8z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Enfermería</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/enfermeria/tratamientos"
+                ><span class="menu-text">Tratamiento farmacológico</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a href="https://cxdes.com/admin/gestioncentros/enfermeria/stocks"
+                ><span class="sub-menu-text">Stocks</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/enfermeria/pedidos"
+                ><span class="sub-menu-text">Pedidos</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g id="doctor_1_">
+                <g>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M70.6,71.6c-0.9,0-1.8-0.5-2.2-1.4c-0.5-1.2,0-2.6,1.2-3.1c7.5-3.2,8.7-13,9.6-20.9l0.2-1.3
+                  c0.5-3.9,0.7-8.3-1.2-11.8c-1.5-2.9-4.4-5.2-8.1-6.5c-3.8-1.3-8.4-1.3-12.2,0c-3.7,1.2-6.6,3.5-8.1,6.5c-1.9,3.6-1.6,8-1.2,11.8
+                  l0.2,1.3c0.9,7.9,2.1,17.7,9.6,20.9c1.2,0.5,1.8,1.9,1.2,3.1c-0.5,1.2-1.9,1.8-3.1,1.3c-10-4.3-11.4-16.1-12.5-24.7l-0.2-1.3
+                  c-0.6-4.6-0.8-9.9,1.7-14.6c2.1-4,5.9-7.1,10.8-8.8c4.8-1.6,10.5-1.6,15.3,0c4.9,1.6,8.7,4.8,10.8,8.8c2.5,4.7,2.2,10.1,1.7,14.6
+                  L84,46.7c-1,8.6-2.4,20.5-12.5,24.7C71.2,71.6,70.9,71.6,70.6,71.6z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M23.2,107.2c-0.1,0-0.2,0-0.3,0c-1.3-0.2-2.2-1.4-2-2.7l1.1-8.1c1.1-8.1,6.5-14.9,14.1-17.8l15.1-5.8v-6.2
+                  c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4v7.9c0,1-0.6,1.9-1.5,2.2l-16.7,6.3c-6,2.3-10.2,7.6-11,13.9l-1.1,8.1
+                  C25.4,106.3,24.3,107.2,23.2,107.2z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M104.8,107.2c-1.2,0-2.2-0.9-2.4-2.1l-1.1-8.1c-0.8-6.3-5.1-11.7-11-13.9l-16.7-6.3
+                  c-0.9-0.4-1.5-1.2-1.5-2.2v-7.9c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4v6.2L92,78.6c7.6,2.9,13,9.7,14.1,17.8l1.1,8.1
+                  c0.2,1.3-0.7,2.5-2,2.7C105,107.2,104.9,107.2,104.8,107.2z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M75.9,44c-3.6,0-5.9-1.6-7.3-3.6c-3,2.6-8,3.6-16.4,3.6c-1.3,0-2.4-1.1-2.4-2.4s1.1-2.4,2.4-2.4
+                  c13.2,0,14.1-2.7,14.9-5c0.4-1.1,1.5-1.8,2.6-1.6c1.2,0.2,2,1.2,2,2.4c0,1,0.4,4.2,4.2,4.2c1.3,0,2.4,1.1,2.4,2.4
+                  S77.2,44,75.9,44z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      class="st0"
+                      d="M64,91.4c-0.4,0-0.9-0.1-1.3-0.4c-0.5-0.3-11.7-7.4-11.7-16.5c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4
+                  c0,4.6,5.1,9.4,8.2,11.6c3.1-2.3,8.2-7,8.2-11.6c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4c0,9.1-11.2,16.2-11.7,16.5
+                  C64.9,91.3,64.4,91.4,64,91.4z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M45.6,88.8c-1.1,0-2.1-0.8-2.3-2c-0.1-0.3-1.3-8,5-12.7c1.1-0.8,2.5-0.6,3.3,0.5c0.8,1.1,0.6,2.5-0.5,3.3
+                    c-4,3-3.2,7.9-3.2,8.1c0.2,1.3-0.7,2.5-2,2.7C45.8,88.7,45.7,88.8,45.6,88.8z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M54.8,107.2h-4c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4h1.6v-2.9c0-4.8-3.2-10.8-6.8-10.8
+                    c-3.6,0-6.8,6-6.8,10.8v2.9h1.6c1.3,0,2.4,1.1,2.4,2.4c0,1.3-1.1,2.4-2.4,2.4h-4c-1.3,0-2.4-1.1-2.4-2.4v-5.3
+                    C34,93.1,38.4,84,45.6,84s11.6,9.1,11.6,15.6v5.3C57.2,106.1,56.1,107.2,54.8,107.2z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M82.4,94c-1.3,0-2.4-1.1-2.4-2.4V89c0.1-4-0.9-10-3-11c-1.2-0.5-1.7-1.9-1.2-3.1c0.5-1.2,1.9-1.7,3.2-1.2
+                    c5.8,2.6,5.8,13.3,5.8,15.4v2.6C84.8,93,83.8,94,82.4,94z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M82.4,107.2c-4.9,0-9-4-9-9s4-9,9-9s9,4,9,9S87.4,107.2,82.4,107.2z M82.4,94c-2.3,0-4.2,1.9-4.2,4.2
+                    c0,2.3,1.9,4.2,4.2,4.2c2.3,0,4.2-1.9,4.2-4.2C86.6,95.9,84.8,94,82.4,94z"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+
+            <span class="menu-text">Gestión Médica</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/gestionmedica/prescripciones"
+                ><span class="menu-text">Prescripciones</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/gestionmedica/hospitalizaciones"
+                ><span class="sub-menu-text">Hospitalización/Estancia</span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/refugees"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M59.2,40.8c-9.6,0-17.4,7.8-17.4,17.4s7.8,17.4,17.4,17.4c9.6,0,17.4-7.8,17.4-17.4S68.8,40.8,59.2,40.8z
+                M72.3,56.2h-5.4c-0.3-3.8-1.3-7.3-3-10.3C68.3,47.5,71.5,51.4,72.3,56.2z M55.6,56.2c0.3-3.7,1.5-7.3,3.6-10.1
+                c2,2.7,3.3,6.2,3.6,10.1H55.6z M62.8,60.3c-0.3,3.8-1.6,7.3-3.6,10.1c-2.1-2.8-3.3-6.4-3.6-10.1H62.8z M54.5,45.9
+                c-1.7,3.1-2.7,6.7-3,10.3h-5.4C46.9,51.4,50.1,47.5,54.5,45.9z M46.1,60.3h5.4c0.3,3.7,1.3,7.2,3,10.3C50.1,69,46.9,65.1,46.1,60.3
+                z M63.9,70.6c1.7-3,2.7-6.5,3-10.3h5.4C71.5,65.1,68.3,69,63.9,70.6z"
+                />
+                <path
+                  class="st0"
+                  d="M72.6,92.6H45.8c-1.1,0-2.1,0.9-2.1,2.1c0,1.1,0.9,2.1,2.1,2.1h26.8c1.1,0,2.1-0.9,2.1-2.1
+                C74.7,93.5,73.8,92.6,72.6,92.6z"
+                />
+                <path
+                  class="st0"
+                  d="M93.7,17.8H40c-3.5,0-5.9,2.4-5.9,5.9v3.7c-3.2,0.3-5.8,2.9-5.8,6.1V104c0,3.4,2.9,6.2,6.4,6.2h48.8
+                c3.6,0,6.4-2.8,6.4-6.2v-1.5h3.7c3.5,0,5.9-2.4,5.9-5.9V24C99.6,20.4,97.1,17.8,93.7,17.8z M85.9,104c0,1.1-1,2.1-2.3,2.1H34.8
+                c-1.3,0-2.3-0.9-2.3-2.1V33.6c0-1.1,1-2.1,2.3-2.1h48.8c1.3,0,2.3,0.9,2.3,2.1V104z M95.5,96.6c0,1.2-0.6,1.8-1.8,1.8H90V33.6
+                c0-3.4-2.9-6.2-6.4-6.2H38.3v-3.7c0-1.2,0.6-1.8,1.8-1.8h53.7c1.6,0,1.8,1.4,1.8,2.1V96.6z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Refugiados/migrantes</span></a
+          >
+        </li>
+
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/menas"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M83.3,81.9c-1.1,0-2.1,0.9-2.1,2.1v26.8c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V84
+                C85.4,82.9,84.5,81.9,83.3,81.9z"
+                />
+                <path
+                  class="st0"
+                  d="M55.4,87.3c-1.1,0-2.1,0.9-2.1,2.1v21.7c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V89.4
+                C57.5,88.2,56.5,87.3,55.4,87.3z"
+                />
+                <path
+                  class="st0"
+                  d="M64.9,50.6c2.7-2.5,4.4-6.1,4.4-10.1c0-7.6-6.2-13.8-13.9-13.8S41.5,33,41.5,40.6c0,3.9,1.7,7.5,4.3,10
+                c-8.8,1.5-13.4,8.1-13.4,19.3V81c0,4.8,3.9,8.8,8.7,8.9v21.2c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V67.6c0-1.1-0.9-2.1-2.1-2.1
+                s-2.1,0.9-2.1,2.1v18.2c-2.5-0.2-4.6-2.2-4.6-4.8V69.9c0-13.9,7.7-15.5,13.5-15.5h5.2h5.2C66.3,54.4,74,56,74,69.9V81
+                c0,2.5-2,4.6-4.5,4.8V67.6c0-1.1-0.9-2.1-2.1-2.1s-2.1,0.9-2.1,2.1v43.6c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V89.9
+                c4.8-0.2,8.7-4.1,8.7-8.9V69.9C78.1,58.8,73.6,52.2,64.9,50.6z M55.4,30.9c5.4,0,9.7,4.3,9.7,9.7c0,5.3-4.4,9.7-9.7,9.7
+                c-5.4,0-9.7-4.3-9.7-9.7C45.7,35.2,50,30.9,55.4,30.9z"
+                />
+                <path
+                  class="st0"
+                  d="M93,38.5c2.6-2.5,4.3-6,4.3-9.9c0-7.6-6.2-13.8-13.9-13.8S69.5,21,69.5,28.6c0,7.6,6.1,13.7,13.7,13.8
+                c0,0,0,0,0,0h5.9c10.6,0,15.5,5.6,15.5,17.8v12.6c0,3.1-2.5,5.6-5.6,5.7V57.6c0-1.1-0.9-2.1-2.1-2.1s-2.1,0.9-2.1,2.1v53.6
+                c0,1.1,0.9,2.1,2.1,2.1s2.1-0.9,2.1-2.1V82.6c5.4-0.1,9.8-4.4,9.8-9.8V60.2C108.8,47.4,103.3,40,93,38.5z M73.6,28.6
+                c0-5.3,4.4-9.7,9.7-9.7s9.7,4.3,9.7,9.7s-4.4,9.7-9.7,9.7S73.6,33.9,73.6,28.6z"
+                />
+                <path
+                  class="st0"
+                  d="M31.8,19.8c-0.8-0.8-2.1-0.8-2.9,0l-9.1,9.1c-0.8,0.8-0.8,2.1,0,2.9l9.1,9.1c0.4,0.4,0.9,0.6,1.5,0.6
+                c0.5,0,1.1-0.2,1.5-0.6c0.8-0.8,0.8-2.1,0-2.9l-7.6-7.6l7.6-7.6C32.6,22,32.6,20.6,31.8,19.8z"
+                />
+              </g>
+            </svg>
+            <span class="menu-text">MENORES</span></a
+          >
+        </li>
+        <div class="divid-text">GESTION DE RECURSOS</div>
+        <div class="divid-line">........</div>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <path
+                class="st0"
+                d="M72.8,37c-1.3,0-2.4,1.1-2.4,2.4V56c0,1.3,1.1,2.4,2.4,2.4s2.4-1.1,2.4-2.4V39.4C75.2,38.1,74.1,37,72.8,37z
+              M79.9,37c-1.3,0-2.4,1.1-2.4,2.4V56c0,1.3,1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4V39.4C82.3,38.1,81.2,37,79.9,37z M64,16.1
+              c-23.7,0-43,19.3-43,43c0,14.2,6.9,26.8,17.6,34.7V105c0,3.8,3.1,6.9,6.9,6.9c3.8,0,6.9-3.1,6.9-6.9v-4.4c3.7,1,7.6,1.6,11.6,1.6
+              c1.8,0,3.6-0.2,5.3-0.4v3c0,3.9,3.2,7,7,7c3.9,0,7-3.2,7-7v-7.3c14-7.1,23.6-21.6,23.6-38.4C107,35.4,87.7,16.1,64,16.1z M50.1,75.2
+              c-0.6,0-1.3,0.2-1.8,0.6c-0.5,0.4-0.8,1.1-0.8,1.7V105c0,1.2-1,2.1-2.1,2.1s-2.1-1-2.1-2.1V41.8c1.1-0.1,4.1,0.5,6.8,4.2
+              c4.8,6.8,5.7,23.2,5.5,29.2C54.3,75.3,52.1,75.3,50.1,75.2z M83.4,92.1V73.8l5.3-5.3c0.4-0.4,0.7-1.1,0.7-1.7V56V39.4
+              c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4V56v9.8l-5.3,5.3c-0.4,0.4-0.7,1.1-0.7,1.7v32c0,1.3-1,2.3-2.3,2.3
+              c-1.3,0-2.3-1-2.3-2.3v-32c0-0.6-0.3-1.2-0.7-1.7l-5.3-5.3V56V39.4c0-1.3-1.1-2.4-2.4-2.4s-2.4,1.1-2.4,2.4V56v10.8
+              c0,0.6,0.3,1.2,0.7,1.7l5.3,5.3V97c-1.7,0.2-3.5,0.4-5.3,0.4c-4.1,0-8-0.7-11.6-1.9V80.1c5.6,0.2,7.7-0.7,7.9-3
+              c0-0.2,0.9-23.6-6.3-33.8c-3.8-5.3-9.1-7-12.4-6c-1.9,0.6-3,2-3,3.8v46.6c-7.9-7-12.9-17.2-12.9-28.5c0-21.1,17.2-38.3,38.3-38.3
+              s38.3,17.2,38.3,38.3C102.3,73.2,94.7,85.5,83.4,92.1z"
+              />
+            </svg>
+            <span class="menu-text">Alimentación</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/catering/catering_pedidos"
+                ><span class="menu-text">Pedidos</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/catering/catering_stocks"
+                ><span class="menu-text">Stocks</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a href="https://cxdes.com/admin/gestioncentros/catering/catmenus"
+                ><span class="sub-menu-text">Menús</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M89.3,104.3H38.7c-5.1,0-9.3-4.2-9.3-9.3v-69c0-5.1,4.2-9.3,9.3-9.3h50.6c5.1,0,9.3,4.2,9.3,9.3v69
+                  C98.6,100.2,94.4,104.3,89.3,104.3z M38.7,21.5c-2.5,0-4.5,2-4.5,4.5v69c0,2.5,2,4.5,4.5,4.5h50.6c2.5,0,4.5-2,4.5-4.5v-69
+                  c0-2.5-2-4.5-4.5-4.5H38.7z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M91.6,111.2H80.1c-2.6,0-4.7-2.1-4.7-4.7v-4.6c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4v4.6l11.4-0.1l-0.1-4.5
+                  c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4v4.6C96.3,109.1,94.2,111.2,91.6,111.2z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M47.9,111.2H36.4c-2.6,0-4.7-2.1-4.7-4.7v-4.6c0-1.3,1.1-2.4,2.4-2.4c1.3,0,2.4,1.1,2.4,2.4v4.6l11.4-0.1
+                  l-0.1-4.5c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4v4.6C52.6,109.1,50.5,111.2,47.9,111.2z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M96.2,74.4H31.8c-1.3,0-2.4-1.1-2.4-2.4s1.1-2.4,2.4-2.4h64.4c1.3,0,2.4,1.1,2.4,2.4S97.5,74.4,96.2,74.4z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M50.2,85.9H38.7c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4h11.5c1.3,0,2.4,1.1,2.4,2.4
+                  C52.6,84.9,51.5,85.9,50.2,85.9z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M89.3,85.9H77.8c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4h11.5c1.3,0,2.4,1.1,2.4,2.4
+                  C91.7,84.9,90.6,85.9,89.3,85.9z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M96.2,35.3H31.8c-1.3,0-2.4-1.1-2.4-2.4c0-1.3,1.1-2.4,2.4-2.4h64.4c1.3,0,2.4,1.1,2.4,2.4
+                  C98.6,34.3,97.5,35.3,96.2,35.3z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M22.6,58.3c-1.3,0-2.4-1.1-2.4-2.4V42.2c0-0.8,0.4-1.5,1-1.9l9.2-6.9c1.1-0.8,2.5-0.6,3.3,0.5
+                  c0.8,1.1,0.6,2.5-0.5,3.3L25,43.3V56C25,57.3,23.9,58.3,22.6,58.3z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M105.4,58.3c-1.3,0-2.4-1.1-2.4-2.4V43.3l-8.2-6.2c-1.1-0.8-1.3-2.3-0.5-3.3c0.8-1.1,2.3-1.3,3.3-0.5l9.2,6.9
+                  c0.6,0.5,1,1.2,1,1.9V56C107.8,57.3,106.7,58.3,105.4,58.3z"
+                  />
+                </g>
+                <g>
+                  <path
+                    class="st0"
+                    d="M64,74.4c-1.3,0-2.4-1.1-2.4-2.4V33c0-1.3,1.1-2.4,2.4-2.4s2.4,1.1,2.4,2.4V72C66.4,73.4,65.3,74.4,64,74.4z"
+                  />
+                </g>
+              </g>
+            </svg>
+
+            <span class="menu-text">Transporte</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/transporte/vehiculos"
+                ><span class="menu-text">Vehículos</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a href="https://cxdes.com/admin/gestioncentros/transporte/rutas"
+                ><span class="sub-menu-text">Rutas</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a href="https://cxdes.com/admin/gestioncentros/transporte/tareas"
+                ><span class="sub-menu-text">Tareas</span></a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M60.5,75.9L39.3,99.7c-1.2,1.3-2.8,2-4.6,2.1c0,0,0,0,0,0c-1.8,0-3.4-0.7-4.5-2l-2.3-2.6
+                c-1.1-1.2-1.7-2.8-1.6-4.4c0.1-1.6,0.8-3.2,2-4.2L52,67.4c1-0.9,1.1-2.4,0.2-3.4c-0.9-1-2.4-1.1-3.4-0.2L25.2,84.9
+                c-2.2,1.9-3.5,4.6-3.6,7.5c-0.2,2.9,0.8,5.7,2.8,7.9l2.3,2.6c2.1,2.3,5,3.6,8.1,3.6c0,0,0,0,0,0c3.1,0,6-1.3,8.1-3.6L64.1,79
+                c0.9-1,0.8-2.5-0.2-3.4C62.9,74.8,61.4,74.9,60.5,75.9z"
+                />
+                <path
+                  class="st0"
+                  d="M66.7,54.3l12-10.7c0.3-0.2,0.6-0.5,0.8-0.9c0.3-0.6,0.4-1.2,0.2-1.8c-0.3-1.1-0.5-2.2-0.5-3.4
+                c0-6.3,5.4-11.5,11.7-11.2l-6.9,7c-0.9,0.9-0.9,2.4,0,3.4l7.4,7.3c0.9,0.9,2.4,0.9,3.4,0l6.9-6.8c0,0.1,0,0.2,0,0.2
+                c0,6.2-5,11.2-11.2,11.2c-1.1,0-2.2-0.2-3.3-0.5c-0.9-0.3-1.9,0-2.5,0.7L74.5,60.2c-0.9,1-0.8,2.5,0.2,3.4c0.5,0.4,1,0.6,1.6,0.6
+                c0.7,0,1.3-0.3,1.8-0.8l9.2-10.3c1,0.2,2.1,0.3,3.2,0.3c8.8,0,15.9-7.2,15.9-15.9c0-2-0.4-4-1.1-5.9c-0.3-0.7-0.9-1.3-1.7-1.5
+                c-0.8-0.2-1.6,0.1-2.2,0.6L93,39l-4-4l8.3-8.4c0.6-0.6,0.7-1.4,0.6-2.2c-0.2-0.8-0.8-1.5-1.5-1.7c-1.9-0.8-3.9-1.1-5.9-1.1
+                c-8.8,0-15.9,7.2-15.9,15.9c0,1.1,0.1,2.2,0.3,3.2l-11.2,10c-1,0.9-1.1,2.4-0.2,3.4C64.2,55,65.7,55.1,66.7,54.3z"
+                />
+                <path
+                  class="st0"
+                  d="M30.5,91.9c0,3.1,2.5,5.5,5.5,5.5c3.1,0,5.5-2.5,5.5-5.5c0-3.1-2.5-5.5-5.5-5.5C33,86.4,30.5,88.9,30.5,91.9z
+                M37.8,91.9c0,1-0.8,1.8-1.8,1.8c-1,0-1.8-0.8-1.8-1.8c0-1,0.8-1.8,1.8-1.8C37,90.2,37.8,90.9,37.8,91.9z"
+                />
+                <path
+                  class="st0"
+                  d="M103.9,85.4l-20-20.3c-0.5-0.5-1.3-0.8-2-0.7l-8.2,1.1L43.9,35.8l-3-7.3c-0.2-0.5-0.6-1-1.1-1.2l-10.9-5.5
+                c-0.9-0.5-2.1-0.3-2.8,0.5l-3.9,4.1c-0.7,0.7-0.9,1.8-0.4,2.7l5.1,10.8c0.3,0.5,0.7,1,1.2,1.2l7.1,2.9l30.4,29.8L65,81.6
+                c-0.1,0.7,0.2,1.4,0.7,1.9l19.9,20.1c1.7,1.7,4,2.7,6.4,2.7c0,0,0,0,0,0c2.4,0,4.7-0.9,6.4-2.6l5.5-5.5
+                C107.3,94.6,107.4,88.9,103.9,85.4z M68.1,69.4L38.2,40.2c-0.2-0.2-0.5-0.4-0.8-0.5l-6.7-2.7l-4-8.5l1.6-1.6l8.6,4.3l2.9,6.9
+                c0.1,0.3,0.3,0.6,0.5,0.8L69.4,68L68.1,69.4z M100.5,94.8l-5.5,5.5c-0.8,0.8-1.9,1.2-3,1.2c0,0,0,0,0,0c-1.1,0-2.2-0.5-3-1.3
+                L69.8,80.9l0.6-7.1l3.5-3.5l7.4-1l19.2,19.4C102.1,90.4,102.1,93.1,100.5,94.8z"
+                />
+                <path
+                  class="st0"
+                  d="M77.3,78.1c-0.9-0.9-2.4-0.9-3.4,0C73,79,73,80.5,74,81.5l17.9,17.7c0.5,0.5,1.1,0.7,1.7,0.7
+                c0.6,0,1.2-0.2,1.7-0.7c0.9-0.9,0.9-2.4,0-3.4L77.3,78.1z"
+                />
+                <path
+                  class="st0"
+                  d="M81.8,73.6c-0.9-0.9-2.4-0.9-3.4,0c-0.9,0.9-0.9,2.4,0,3.4l17.9,17.7c0.5,0.5,1.1,0.7,1.7,0.7
+                c0.6,0,1.2-0.2,1.7-0.7c0.9-0.9,0.9-2.4,0-3.4L81.8,73.6z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Mantenimiento</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/mantenimiento/limpiezas"
+                ><span class="menu-text">Limpieza</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/mantenimiento/limpieza_pedidos"
+                ><span class="sub-menu-text">Pedidos</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/mantenimiento/legionellaregs"
+                ><span class="sub-menu-text">Registros de legionella</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/mantenimiento/cocinaregs"
+                ><span class="sub-menu-text">Registros de cocina</span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <div class="divid-text">COMUNCIACION Y REGRISTRO</div>
+        <div class="divid-line">........</div>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/diario-equipo"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M37.9,11.9c-4.8,0-8.6,3.9-8.6,8.6V97c0,4.8,3.9,8.6,8.6,8.6h13.3v10.5l9.1-4.9l9.1,4.9v-10.5h29.4v-4.5H69.3
+                V97h-4.5v4.1v4.5v2.9l-4.6-2.5l-4.6,2.5v-2.9v-4.5V97h-4.5v4.1H37.9c-2.3,0-4.1-1.9-4.1-4.1c0-2.3,1.9-4.1,4.1-4.1h60.9v-2.2v-2.2
+                V11.9H37.9z M94.2,88.4h-49V21.3h-4.5v67.1h-2.9c-1.5,0-2.9,0.4-4.1,1.1v-69c0-2.3,1.9-4.1,4.1-4.1h56.4V88.4z"
+                />
+                <path
+                  class="st0"
+                  d="M84,34.1H55.5v14.3H84V34.1z M79.5,43.9H60v-5.3h19.6V43.9z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Diario de equipo</span></a
+          >
+        </li>
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/registro_contactos"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M95,15H32.8c-1.3,0-2.3,1-2.3,2.3v13.8h-5.7c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h5.7v10.8h-5.7
+                c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h5.7v10.8h-5.7c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h5.7v10.8h-5.7c-1.2,0-2.3,1-2.3,2.3
+                s1,2.3,2.3,2.3h5.7v10.8h-5.7c-1.2,0-2.3,1-2.3,2.3s1,2.3,2.3,2.3h5.7v13.8c0,1.3,1,2.3,2.3,2.3H95c5.8,0,10.5-4.7,10.5-10.5v-77
+                C105.5,19.7,100.8,15,95,15z M100.8,102.5c0,3.2-2.6,5.8-5.8,5.8H35.2V96.9h5.7c1.2,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3h-5.7V81.6h5.7
+                c1.2,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3h-5.7V66.3h5.7c1.2,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3h-5.7V50.9h5.7c1.2,0,2.3-1,2.3-2.3
+                s-1-2.3-2.3-2.3h-5.7V35.6h5.7c1.2,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3h-5.7V19.6H95c3.2,0,5.8,2.6,5.8,5.8V102.5z"
+                />
+                <path
+                  class="st0"
+                  d="M78.2,58.1c3-2.6,4.8-6.3,4.8-10.5c0-7.7-6.3-13.9-14-13.9s-14,6.2-14,13.9c0,4.2,1.9,8,4.8,10.5
+                c-6.5,2.4-11.8,8.3-11.8,19.6v4.9c0,3.8,2.4,7.3,6,8.7c3.2,1.2,8.4,2.6,15,2.6c6.6,0,11.8-1.4,15-2.6c3.6-1.4,6-4.8,6-8.7v-4.9
+                C90,66.4,84.7,60.4,78.2,58.1z M69,38.3c5.1,0,9.3,4.2,9.3,9.3s-4.2,9.3-9.3,9.3c-5.1,0-9.3-4.2-9.3-9.3S63.9,38.3,69,38.3z
+                M85.3,82.6c0,1.9-1.2,3.6-3,4.3c-2.8,1.1-7.4,2.3-13.3,2.3c-5.9,0-10.5-1.3-13.3-2.3c-1.8-0.7-3-2.4-3-4.3v-4.9
+                c0-14.6,10.1-16.2,14.4-16.2h3.7c4.3,0,14.4,1.6,14.4,16.2V82.6z"
+                />
+              </g>
+            </svg>
+            <span class="menu-text">REG. DE CONTACTOS</span></a
+          >
+        </li>
+
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              cxml:space="preserve"
+            >
+              <g>
+                <path
+                  class="st0"
+                  d="M110.4,63.9c0-1.3,0-2.7,0-4c0-4.2-3-7.2-7.2-7.2c-0.8,0-1.5,0-2.3,0c-1.3,0-2.5,0-3.8,0c-1.6,0-2-0.5-2.3-1.2
+                c-0.6-1.3-0.4-2,0.5-3c0.6-0.6,1.2-1.2,1.7-1.8c0.7-0.8,1.5-1.5,2.3-2.3c3.3-3.2,3.3-7.7,0-11.1c-1-1-2-2-3-2.9
+                c-0.6-0.6-1.1-1.1-1.7-1.7c-1.8-1.8-3.8-2.8-6-2.8c-2.1,0-4,0.9-5.8,2.6c-1,1-1.9,2-2.8,2.9l-0.8,0.9c-0.7,0.8-1.3,0.9-1.7,0.9
+                c-0.4,0-0.8-0.1-1.2-0.2c-0.6-0.2-1.2-0.4-1.2-2.1c0-1.1,0-2.2,0-3.3c0-0.8,0-1.5,0-2.3c0-2.4-0.7-4.4-2.2-5.9
+                c-1-1-2.7-2.1-5.6-2.1c-0.1,0-0.2,0-0.3,0c-0.9,0-1.8,0-2.7,0l-0.7,0l-0.4,0c-0.9,0-1.8,0-2.7,0c-0.1,0-0.2,0-0.3,0
+                c-2.8,0-4.6,1.2-5.6,2.1c-1.4,1.4-2.2,3.4-2.2,5.9c0,0.8,0,1.5,0,2.3c0,1.1,0,2.2,0,3.3c0,1.6-0.6,1.8-1.2,2.1
+                c-0.4,0.2-0.9,0.2-1.2,0.2c-0.4,0-1-0.1-1.7-0.9l-0.8-0.9c-0.9-1-1.8-1.9-2.8-2.9c-1.8-1.7-3.7-2.6-5.8-2.6c-2.1,0-4.1,0.9-6,2.8
+                c-0.6,0.6-1.1,1.1-1.7,1.7c-1,0.9-2,1.9-3,2.9c-3.3,3.4-3.3,7.9,0,11.1c0.8,0.7,1.5,1.5,2.3,2.3c0.6,0.6,1.2,1.2,1.7,1.8
+                c1,1,1.1,1.7,0.5,3c-0.3,0.7-0.7,1.2-2.3,1.2c-1.3,0-2.5,0-3.8,0c-0.7,0-1.5,0-2.2,0c-4.3,0-7.3,2.9-7.3,7.2c0,1.3,0,2.7,0,4
+                c0,1.3,0,2.7,0,4c0,2.7,1.1,4.4,2,5.4c0.9,0.9,2.6,2.1,5.4,2.1l0.2,0c0.5,0,1,0,1.6,0l1.5,0l1.5,0c0.4,0,0.8,0,1.2,0c0,0,0,0,0,0
+                c1.5,0,1.8,0.5,2.1,1.1c0.6,1.2,0.5,2-0.5,3c-0.6,0.6-1.2,1.2-1.9,1.9c-0.6,0.6-1.2,1.1-1.8,1.7c-3.7,3.7-3.8,7.7-0.1,11.5
+                c1,1.1,2.1,2.1,3.1,3.1c0.5,0.4,0.9,0.9,1.4,1.3c1.2,1.2,3.2,2.8,5.9,2.8c2.8,0,4.8-1.7,6-2.9c0.8-0.8,1.6-1.5,2.4-2.3
+                c0.6-0.6,1.3-1.2,1.9-1.8c0.2-0.2,0.2-0.2,0.5-0.2c0.4,0,1,0.1,1.8,0.4c0.7,0.2,0.7,0.5,0.8,0.9c0.1,1.3,0.1,2.5,0.1,3.8
+                c0,1.1,0,2.1,0.1,3.2c0.1,4.5,3.1,7.5,7.4,7.6l0.5,0l2.7,0l0.3,0c1.4,0,2.9,0,4.3,0c4.3,0,7.3-3.1,7.4-7.6c0-1.1,0.1-2.1,0.1-3.2
+                c0-1.3,0-2.5,0.1-3.8c0-0.4,0-0.7,0.8-0.9c0.8-0.3,1.4-0.4,1.8-0.4c0.2,0,0.3,0,0.5,0.2c0.6,0.6,1.3,1.2,1.9,1.8
+                c0.8,0.7,1.6,1.5,2.4,2.3c1.3,1.3,3.3,2.9,6,2.9c2.7,0,4.7-1.6,5.9-2.8c0.5-0.4,0.9-0.9,1.4-1.3c1-1,2.1-2.1,3.1-3.1
+                c3.6-3.8,3.6-7.8-0.1-11.5c-0.6-0.6-1.2-1.2-1.8-1.7c-0.7-0.6-1.3-1.3-1.9-1.9c-1-1-1.1-1.7-0.5-3c0.3-0.6,0.7-1.1,2.1-1.1
+                c0.5,0,0.9,0,1.3,0l1.5,0l1.5,0c0.5,0,1,0,1.6,0l0.2,0c2.8,0,4.5-1.1,5.4-2.1c0.9-0.9,2-2.6,2-5.4
+                C110.4,66.6,110.4,65.2,110.4,63.9z M103,70.6c0,0-0.1,0-0.1,0c-0.6,0-1.1,0-1.7,0c-1,0-2,0-3,0c-0.4,0-0.8,0-1.2,0
+                c0,0-0.1,0-0.1,0c-2.9,0-5.1,1.3-6.4,3.9c-1.4,3-1,5.9,1.4,8.3c1.2,1.3,2.5,2.4,3.7,3.7c1.9,1.9,1.9,2.9,0.1,4.9
+                c-1.4,1.5-2.9,2.9-4.4,4.4c-1,1-1.8,1.5-2.5,1.5c-0.8,0-1.6-0.5-2.7-1.6c-1.4-1.4-2.9-2.7-4.3-4.1C80.6,90.4,79.3,90,78,90
+                c-1.1,0-2.2,0.3-3.3,0.6c-2.3,0.8-3.9,2.6-4,5.2c-0.1,2.3-0.1,4.7-0.2,7c-0.1,1.7-0.7,3-2.7,3c-1.5,0-2.9,0-4.4,0
+                c-0.1,0-0.2,0-0.3,0c-1.1,0-2.1,0-3.2,0c-2,0-2.6-1.3-2.7-3c-0.1-2.3-0.1-4.7-0.2-7c-0.1-2.6-1.7-4.4-4-5.2
+                C52.2,90.3,51.1,90,50,90c-1.3,0-2.6,0.4-3.8,1.5c-1.4,1.4-2.9,2.7-4.3,4.1c-1.1,1-1.9,1.6-2.7,1.6c-0.8,0-1.6-0.5-2.5-1.5
+                c-1.5-1.5-3-2.9-4.4-4.4c-1.9-1.9-1.8-3,0.1-4.9c1.2-1.2,2.5-2.4,3.7-3.7c2.4-2.4,2.8-5.3,1.4-8.3c-1.2-2.6-3.5-3.9-6.4-3.9
+                c0,0-0.1,0-0.1,0c-0.4,0-0.8,0-1.2,0c-1,0-2,0-3,0c-0.6,0-1.1,0-1.7,0c0,0-0.1,0-0.1,0c-1.8,0-2.7-0.8-2.7-2.7c0-2.7,0-5.4,0-8.1
+                c0-1.6,0.8-2.4,2.5-2.4c0,0,0,0,0,0c0.8,0,1.5,0,2.3,0c1.3,0,2.5,0,3.8,0c3,0,5.3-1.3,6.6-4c1.4-3,0.9-5.9-1.5-8.3
+                c-1.4-1.4-2.7-2.7-4-4.1c-1.6-1.5-1.2-3,0.1-4.4c1.5-1.6,3.1-3,4.6-4.5c0.9-0.9,1.8-1.4,2.6-1.4c0.8,0,1.6,0.4,2.5,1.3
+                c1.2,1.2,2.3,2.4,3.4,3.6c1.5,1.6,3.3,2.4,5.2,2.4c0.9,0,1.8-0.2,2.8-0.5c3-1.1,4.4-3.4,4.4-6.6c0-1.8,0-3.7,0-5.5
+                c0-2.1,0.8-3.2,3-3.2c0.1,0,0.1,0,0.2,0c1,0,1.9,0,2.9,0c0.1,0,0.3,0,0.4,0v0c0.2,0,0.5,0,0.7,0c0.9,0,1.9,0,2.8,0
+                c0.1,0,0.1,0,0.2,0c2.2,0,3,1.2,3,3.2c0,1.8,0,3.7,0,5.5c0,3.2,1.4,5.5,4.4,6.6c1,0.3,1.9,0.5,2.8,0.5c1.9,0,3.7-0.8,5.2-2.4
+                c1.1-1.2,2.2-2.4,3.4-3.6c0.9-0.9,1.7-1.3,2.5-1.3c0.8,0,1.7,0.5,2.6,1.4c1.5,1.5,3.1,3,4.6,4.5c1.3,1.4,1.7,2.9,0.1,4.4
+                c-1.4,1.3-2.7,2.7-4,4.1c-2.4,2.4-2.9,5.2-1.5,8.3c1.2,2.8,3.6,4,6.6,4c1.3,0,2.5,0,3.8,0c0.8,0,1.5,0,2.3,0c0,0,0,0,0,0
+                c1.6,0,2.4,0.8,2.5,2.4c0,2.7,0,5.4,0,8.1C105.7,69.8,104.7,70.6,103,70.6z"
+                />
+                <path
+                  class="st0"
+                  d="M64,43.6c-11.3,0-20.4,9.2-20.4,20.4c0,11.3,9.2,20.4,20.4,20.4c11.3,0,20.4-9.2,20.4-20.4
+                C84.4,52.7,75.3,43.6,64,43.6z M64,79.7c-8.7,0-15.7-7-15.7-15.7c0-8.7,7-15.7,15.7-15.7c8.7,0,15.7,7,15.7,15.7
+                C79.7,72.7,72.7,79.7,64,79.7z"
+                />
+              </g>
+            </svg>
+
+            <span class="menu-text">Coordinación</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/coordinacion/avisos"
+                ><span class="sub-menu-text">Instrucciones/avisos</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/coordinacion/incidencias"
+                ><span class="sub-menu-text">Incidencias</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/coordinacion/cuadrantes"
+                ><span class="sub-menu-text">Cuadrante</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/coordinacion/agendacentros"
+                ><span class="sub-menu-text">Agenda del centro</span></a
+              >
+            </li>
+          </ul>
+          <ul
+            class="nav nav-second-level collapse"
+            aria-expanded="false"
+            id="nodo_informes"
+          >
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/interdisciplinariedad/listado_informes"
+                ><span>Registros</span></a
+              >
+            </li>
+          </ul>
+          <ul
+            class="nav nav-second-level collapse"
+            aria-expanded="false"
+            id="nodo_informes"
+          >
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/coordinacion/tests_escalas"
+                aria-expanded="false"
+                ><span class="menu-text">Tests y Escalas</span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+          >
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 128 128"
+              style="enable-background: new 0 0 128 128"
+              class="svg-size"
+              xml:space="preserve"
+            >
+              <path
+                class="st0"
+                d="M47.3,59.2c0.2,0,0.3,0.1,0.5,0.1c1.1,0,2-0.7,2.2-1.8l5.7-25l25.6,5.8l-2.2,9.4c-0.1,0.6,0,1.2,0.3,1.7
+              c0.3,0.5,0.8,0.9,1.4,1l9.4,2.1L88,62.3c-0.3,1.2,0.5,2.4,1.7,2.7c0.2,0,0.3,0.1,0.5,0.1c1.1,0,2-0.7,2.2-1.8l2.7-12l0-0.2
+              c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2-0.1-0.5L95,50.1l-0.2-0.3l-9-14.3c-0.3-0.5-0.9-0.9-1.3-1c-0.1,0-0.1,0-30.1-6.9
+              c-0.2,0-0.3-0.1-0.5-0.1c-1.1,0-2,0.7-2.2,1.8l-6.2,27.2c-0.1,0.6,0,1.2,0.3,1.7C46.2,58.7,46.7,59.1,47.3,59.2z M85,42.5l3.1,5
+              l-4.1-0.9L85,42.5z M64.5,26.4c0.2,0,0.3,0.1,0.5,0.1c0,0,0,0,0,0c1.1,0,2-0.7,2.2-1.8l0.3-1.4l25.6,5.8L91,38.5
+              c-0.1,0.6,0,1.2,0.3,1.7c0.3,0.5,0.8,0.9,1.4,1l9.4,2.1l-4.5,19.2c-0.1,0.6,0,1.2,0.3,1.7c0.3,0.5,0.8,0.9,1.4,1
+              c0.2,0,0.3,0.1,0.5,0.1c1.1,0,2-0.7,2.2-1.7l5-21.5l0-0.1l0-0.2c0-0.1,0-0.2,0-0.3l0-0.2l0,0c0,0,0-0.1,0-0.1c0-0.1,0-0.2-0.1-0.3
+              l0-0.1l-0.2-0.4l-8.9-14.3c-0.3-0.5-0.9-0.9-1.4-1c0,0,0,0-29.9-6.8c-0.2,0-0.3-0.1-0.5-0.1c-1.1,0-2,0.7-2.2,1.8l-0.8,3.6
+              C62.6,24.9,63.3,26.1,64.5,26.4z M96.8,33.2l3.1,5l-4.1-0.9L96.8,33.2z M81.5,56.4c0.3-1.2-0.5-2.4-1.7-2.7L62,49.6
+              c-0.2,0-0.3-0.1-0.5-0.1c-1.1,0-2,0.7-2.2,1.8C59,52.5,59.8,53.7,61,54l17.9,4.1c0.2,0,0.3,0.1,0.5,0.1
+              C80.4,58.2,81.3,57.5,81.5,56.4z M78.3,60.7l-17.9-4.1c-0.2,0-0.3-0.1-0.5-0.1c-1.1,0-2,0.7-2.2,1.8c-0.1,0.6,0,1.2,0.3,1.7
+              c0.3,0.5,0.8,0.9,1.4,1l17.9,4.1c0.2,0,0.3,0.1,0.5,0.1c1.1,0,2-0.7,2.2-1.8C80.2,62.2,79.5,61,78.3,60.7z M106.4,69.2
+              c-0.9-1-2.2-1.6-3.5-1.6l-51.8,0l-5.4-5.4c-0.9-0.9-2.1-1.4-3.3-1.4H25.1c-1.3,0-2.6,0.6-3.5,1.6c-0.9,1-1.3,2.3-1.1,3.6l5.3,39.6
+              c0.3,2.3,2.3,4,4.6,4h67.4c1.1,0,2.2-0.4,3-1.1c0.8-0.7,1.4-1.7,1.6-2.8l5.2-32.8C107.7,71.6,107.3,70.3,106.4,69.2z M97.7,105.2
+              l-67.5-0.1L25,65.4c0,0,0.1,0,0.1,0l17.5,0l5.4,5.4c0.9,0.9,2.1,1.4,3.3,1.4l51.8,0.1L97.7,105.2z M29.3,58c1.2,0,2.3-1,2.3-2.3
+              v-5.5h9.5c1.2,0,2.3-1,2.3-2.3s-1-2.3-2.3-2.3h-9.7c-2.4,0-4.3,1.9-4.3,4.3v5.7C27.1,56.9,28.1,58,29.3,58z"
+              />
+            </svg>
+
+            <span class="menu-text">ADMINISTRACION</span
+            >
+            <!-- <span class="fa arrow"></span> -->
+          </a>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/hrm/staff_infor"
+                ><span class="sub-menu-text">RRHH</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/cajacentros"
+                ><span class="sub-menu-text">Caja Centro</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/movimientos_tarjeta"
+                ><span class="sub-menu-text">Movimientos de tarjeta</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/cajausuarios"
+                ><span class="sub-menu-text">Caja Usuarios</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/liquidacionesusuarios"
+                ><span class="sub-menu-text">Liquidaciones Usuarios</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/plan_directivo/edit/1"
+                ><span class="sub-menu-text">Plan directivo</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/plan_formacion/edit/2"
+                ><span class="sub-menu-text">Plan de formación</span></a
+              >
+            </li>
+          </ul>
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/planes_desarrollo"
+                ><span class="sub-menu-text">Planes de desarrollo</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/protocolo"
+                aria-expanded="false"
+                ><span class="menu-text">Protocolos</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/documentos"
+                aria-expanded="false"
+                ><span class="menu-text">Documentos</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/administracion/facturacion"
+                aria-expanded="false"
+                ><span class="menu-text">Facturación compras</span></a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <!-- <li class="">
+          <a
+            href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+            aria-expanded="false"
+            ><i class="fa fa-toolbox" style="margin-right: 5px"></i
+            ><span class="menu-text">Utilidades</span
+            ><span class="fa arrow"></span
+          ></a>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a href="https://cxdes.com/admin/surveys"
+                ><span class="menu-text">Encuestas</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdeapps.com/pt/userext/loginEx/carlos%40cxde.es/8ba91e8c9114eb6de351c38caf4c2c39cdde172588fc2424a5a6f63bec994ef01fee6f9b2d14b1fb2b57b00353c8026d01ade463c9f810cce9d0f0f9d0aac4dd"
+                target="_blank"
+                ><span class="menu-text">Partes de trabajo</span></a
+              >
+            </li>
+          </ul>
+
+          <ul class="nav nav-second-level collapse" aria-expanded="false">
+            <li class="">
+              <a
+                href="https://cxdes.com/admin/gestioncentros/goto_moodle"
+                target="_blank"
+                ><span class="menu-text">Campus</span></a
+              >
+            </li>
+          </ul>
+        </li> -->
+
+       
+      </ul>
+ 
+    </aside>
+    <!-- <div
+      class="btn-bottom-toolbar btn-toolbar-container-out text-right"
+      style="width: 100%; background: #eee"
+    >
+      <p>
+        31 de Octubre de 2023, 18:26 |
+        <a href="https://cxdes.com/admin/tickets/form_ticket">Soporte</a>
+      </p>
+    </div> -->
+    <div id="wrapper" style="min-height: 916px">
+      <div class="header-right">
+        <div class="search-section">
+          <input type="text" class="search-bar" placeholder="Buscar" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+        <nav>
+          <!-- <div class="small-logo">
+            <span class="text-primary">
+              <a href="https://cxdes.com/admin/" class="logo img-responsive">
+                <img
+                  src="./desingn_files/logo.png"
+                  class="img-responsive"
+                  alt="cxde"
+                />
+              </a>
+            </span>
+          </div> -->
+          
+          <div class="right-header-section">
+            <!-- <div class="mobile">
+              <button class="hambgar-style-button" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="true"><svg viewBox="0 0 24 24" fill="none" style="width: 20px;" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+                <ul class="mobile-nav" id="mobile-collapse">
+                  <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                    <a
+                      href="https://portalempleado.cxdeapps.com/portalempleado/"
+                      target="_blank"
+                      class="dropdown-toggle profile nav-header"
+                      >Portal del empleado</a
+                    >
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                    <a
+                      href="https://cxdes.com/admin/clients"
+                      class="dropdown-toggle profile nav-header"
+                      >Agenda</a
+                    >
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                    <a
+                      href="https://cxdes.com/admin/intranet"
+                      class="dropdown-toggle profile nav-header"
+                      >Comunicación</a
+                    >
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                    <a
+                      href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                      class="dropdown profile nav-header"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      >Gestión de Centros</a
+                    >
+                    <ul class="dropdown-menu animated fadeIn">
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/73"
+                          >* Píxima Test</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/233"
+                          >* Test de Usabilidad</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/71"
+                          >UED San Lucas</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                    <a
+                      href="https://cxdes.com/admin/administracion"
+                      class="dropdown-toggle profile nav-header"
+                      >Administración</a
+                    >
+                  </li>
+      
+                  
+                </ul>
+            </div> -->
+            <div class="mobile-menu">
+              <button
+                type="button"
+                class="navbar-toggle  mobile-menu-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#mobile-collapse"
+                aria-expanded="false"
+              >
+              <svg viewBox="0 0 24 24" fill="none" style="width: 20px;" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>
+              </button>
+              <ul class="mobile-icon-menu"></ul>
+              <div
+                class="mobile-navbar collapse"
+                id="mobile-collapse"
+                aria-expanded="false"
+                style="height: 0px"
+                role="navigation"
+              >
+                <ul class="nav navbar-nav">
+                  <li
+                    class="dropdown"
+                 
+                    data-placement="bottom"
+                  >
+                    <a
+                      href="https://portalempleado.cxdeapps.com/portalempleado/"
+                      target="_blank"
+                      class="dropdown-toggle profile"
+                      >Portal del empleado</a
+                    >
+                  </li>
+                  <li
+                    class="dropdown"
+                 
+                    data-placement="bottom"
+                  >
+                    <a
+                      href="https://cxdes.com/admin/clients"
+                      class="dropdown-toggle profile"
+                      >Agenda</a
+                    >
+                  </li>
+    
+                  <li
+                    class="dropdown"
+              
+                  >
+                    <a
+                      href="https://cxdes.com/admin/intranet"
+                      class="dropdown-toggle profile"
+                      >Comunicación</a
+                    >
+                  </li>
+    
+                  <li
+                    class="header-user-profile"
+                   
+                    data-placement="bottom"
+                  >
+                    <a
+                      href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                      class="dropdown-toggle profile active-menu-up"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      >Gestión de Centros</a
+                    >
+                    <ul class="dropdown-menu animated fadeIn">
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/73"
+                          >* Píxima Test</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/233"
+                          >* Test de Usabilidad</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="https://cxdes.com/admin/gestioncentros/centro/71"
+                          >UED San Lucas</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+    
+                  <li
+                    class="dropdown"
+                   
+                    data-placement="bottom"
+                  >
+                    <a
+                      href="https://cxdes.com/admin/administracion"
+                      class="dropdown-toggle profile"
+                      >Administración</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://portalempleado.cxdeapps.com/portalempleado/"
+                  target="_blank"
+                  class="dropdown-toggle profile nav-header"
+                  >Portal del empleado</a
+                >
+              </li>
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://cxdes.com/admin/clients"
+                  class="dropdown-toggle profile nav-header"
+                  >Agenda</a
+                >
+              </li>
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://cxdes.com/admin/intranet"
+                  class="dropdown-toggle profile nav-header"
+                  >Comunicación</a
+                >
+              </li>
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                  class="dropdown profile nav-header"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  >Gestión de Centros</a
+                >
+                <ul class="dropdown-menu animated fadeIn">
+                  <li class="">
+                    <a href="https://cxdes.com/admin/gestioncentros/centro/73"
+                      >* Píxima Test</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="https://cxdes.com/admin/gestioncentros/centro/233"
+                      >* Test de Usabilidad</a
+                    >
+                  </li>
+                  <li class="">
+                    <a href="https://cxdes.com/admin/gestioncentros/centro/71"
+                      >UED San Lucas</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://cxdes.com/admin/administracion"
+                  class="dropdown-toggle profile nav-header"
+                  >Administración</a
+                >
+              </li>
+  
+              
+            </ul>
+            <ul class="user-info">
+              <li class="dropdown" data-toggle="tooltip" data-placement="bottom">
+                <a
+                  href="https://cxdes.com/admin/gestioncentros/coordinacion/avisos"
+                  class="dropdown-toggle profile"
+                  style="padding-right: 0"
+                >
+                  <img src="bell.png" alt="bell" class="nav-bell" />
+                </a>
+              </li>
+              <li
+                class="icon header-user-profile"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                style="margin-left: 10px; position: relative; "
+              >
+                <a
+                  href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                  class="dropdown-toggle profile"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  style="color: rgba(0,0,0,0.6);"
+                >
+                  Carlos A
+                </a>
+                <ul class="dropdown-menu animated fadeIn user-info-dropdown">
+                  <li class="user-profile-info">
+                    <div class="user-image">
+                      <img src="man.jpg" alt="profile-image" >
+                    </div>
+                    <div class="user-info-list">
+                      <span class="user-profile-name">Carios Alcaraz Moya</span>
+                      <span class="user-mail">Calcaraz@samu.com</span>
+                      <span class="user-role">Admin</span>  
+                    </div>
+            
+                  </li>
+                  <li class="header-my-profile">
+                    <a href="https://cxdes.com/admin/tickets/form_ticket" style="padding-left: 46px;"
+                      >Soporte</a
+                    >
+                  </li>
+                  <li class="header-my-profile">
+                    <a href="https://cxdes.com/admin/profile"><img src="person.png"> perfil</a>
+                  </li>
+                  <!-- <li class="header-edit-profile">
+                    <a href="https://cxdes.com/admin/staff/edit_profile" style="padding-left: 46px;"
+                      >Editar perfil</a
+                    >
+                  </li> -->
+                  <li class="header-edit-profile">
+                    <a href="https://cxdes.com/admin/staff/edit_ausencias" style="padding-left: 46px;"
+                      >Ausencias y vacaciones</a
+                    >
+                  </li>
+                  <li class="header-edit-profile">
+                    <a href="https://cxdes.com/admin/staff/control_horario" style="padding-left: 46px;"
+                      >Control horario</a
+                    >
+                  </li>
+                  <!-- <li class="header-edit-profile">
+                    <a href="https://cxdes.com/admin/staff/change_password"
+                      >Cambiar contraseña</a
+                    >
+                  </li> -->
+                  <li class="header-logout">
+                    <a
+                      href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#" style="padding-left: 21px;"
+                      onclick="logout(); return false;"
+                      ><img src="logout.png">  &nbsp;Salir</a
+                    >
+                  </li>
+                </ul>
+               
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 style="margin-left: 20px;">Gestión de centros - Traslado de pacientes</h3>
+            <div class="_filters _hidden_inputs hidden">
+              <input type="hidden" name="my_traslado_pacientes" value="" />
+              <!--Fields for Datatables Export PDF -->
+              <input
+                type="hidden"
+                id="image_centro"
+                value="https://cxdes.com/assets/images/centro-placeholder.png"
+              />
+              <input
+                type="hidden"
+                id="image_inferior_centro"
+                value="https://cxdes.com/assets/images/centro-placeholder.png"
+              />
+              <input type="hidden" id="nombre_centro" value="* Píxima Test" />
+              <input type="hidden" id="direccion_centro" value="" />
+              <input
+                type="hidden"
+                id="email_centro"
+                value="pixima@pixima.net"
+              />
+              <input type="hidden" id="tlf_centro" value="655254982" />
+            </div>
+            <div class="panel_s">
+              <div class="panel-body">
+                <div class="_buttons">
+                  <h3 style="margin-left: 20px">
+                    <div id="title_manage_pdf" class="hidden">
+                      Traslado de pacientes
+                    </div>
+                    <div class="pull-right" style="margin-right: 15px">
+                      <a
+                        href="https://cxdes.com/admin/gestioncentros/traslado_pacientes/traslado_paciente"
+                        class="btn btn-info mright5 test pull-right display-block"
+                        >Añadir</a
+                      >
+                    </div>
+                  </h3>
+                </div>
+                <div class="clearfix"></div>
+                <hr class="hr-panel-heading" />
+                <a
+                  href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                  data-toggle="modal"
+                  data-target="#customers_bulk_action"
+                  class="bulk-actions-btn table-btn hide"
+                  data-table=".table-traslado_pacientes"
+                  >Acciones masivas</a
+                >
+                <div
+                  class="modal fade bulk_actions"
+                  id="customers_bulk_action"
+                  tabindex="-1"
+                  role="dialog"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title">Acciones masivas</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="checkbox checkbox-danger">
+                          <input
+                            type="checkbox"
+                            name="mass_delete"
+                            id="mass_delete"
+                          />
+                          <label for="mass_delete">Eliminación masiva</label>
+                        </div>
+                        <div class="checkbox checkbox-danger">
+                          <input
+                            type="checkbox"
+                            name="mass_deactivate"
+                            id="mass_deactivate"
+                          />
+                          <label for="mass_deactivate"
+                            >Desactivación masiva</label
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-default"
+                          data-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                        <a
+                          href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                          class="btn btn-info"
+                          onclick="customers_bulk_action(this); return false;"
+                          >Confirmar</a
+                        >
+                      </div>
+                    </div>
+                    <!-- /.modal-content -->
+                  </div>
+                  <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                <div class="clearfix mtop20"></div>
+                <div class="">
+                  <div
+                    id="DataTables_Table_0_wrapper"
+                    class="dataTables_wrapper form-inline dt-bootstrap no-footer"
+                  >
+                    <div class="row"></div>
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div
+                          class="dataTables_length"
+                          id="DataTables_Table_0_length"
+                        >
+                          <label
+                            ><select
+                              name="DataTables_Table_0_length"
+                              aria-controls="DataTables_Table_0"
+                              class="form-control input-sm"
+                            >
+                              <option value="10">10</option>
+                              <option value="25">25</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
+                              <option value="-1">Todo</option>
+                            </select></label
+                          >
+                        </div>
+                        <div class="dt-buttons btn-group">
+                          <button
+                            class="btn btn-default buttons-collection btn-default-dt-options"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            type="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <span>Exportar</span>
+                          </button>
+                          <button
+                            class="btn btn-default btn-default-dt-options"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            type="button"
+                          >
+                            <span>Acciones masivas</span>
+                          </button>
+                          <button
+                            class="btn btn-default btn-default-dt-options btn-dt-reload"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            type="button"
+                            data-toggle="tooltip"
+                            title="Actualizar"
+                          >
+                            <span><i class="fa fa-refresh"></i></span>
+                          </button>
+                          <button
+                            class="btn btn-default btn-default-dt-options"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            type="button"
+                            title="Cambiar Vista"
+                            data-toggle="tooltip"
+                          >
+                            <span
+                              ><i
+                                class="fa fa-table fa-fw"
+                                aria-hidden="true"
+                              ></i
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div
+                          id="DataTables_Table_0_filter"
+                          class="dataTables_filter"
+                        >
+                          <label
+                            ><div class="input-group">
+                              <span class="input-group-addon"
+                                ><span class="fa fa-search"></span></span
+                              ><input
+                                type="search"
+                                class="form-control input-sm"
+                                placeholder="Buscar:"
+                                aria-controls="DataTables_Table_0"
+                              /></div
+                          ></label>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      id="DataTables_Table_0_processing"
+                      class="dataTables_processing panel panel-default"
+                      style="display: none"
+                    >
+                      <div class="dt-loader"></div>
+                    </div>
+                    <table
+                      data-last-order-identifier="customers"
+                      data-default-order=""
+                      class="table table-traslado_pacientes dataTable no-footer dtr-inline"
+                      id="DataTables_Table_0"
+                      role="grid"
+                      aria-describedby="DataTables_Table_0_info"
+                    >
+                      <thead>
+                        <tr role="row">
+                          <th
+                            class="sorting_disabled not-export"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label=" - "
+                          >
+                            <span class="hide"> - </span>
+                            <div class="checkbox mass_select_all_wrap">
+                              <input
+                                type="checkbox"
+                                id="mass_select_all"
+                                data-to-table="traslado_pacientes"
+                              /><label></label>
+                            </div>
+                          </th>
+                          <th
+                            class="toggleable sorting_desc"
+                            id="th-primary-contact"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-sort="descending"
+                            aria-label="FechaActivar para ordenar la columna ascendente"
+                          >
+                            Fecha
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="th-primary-contact"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Nº historiaActivar para ordenar la columna ascendente"
+                          >
+                            Nº historia
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="th-company"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Nombre CompletoActivar para ordenar la columna ascendente"
+                          >
+                            Nombre Completo
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="th-primary-contact-email"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="NifActivar para ordenar la columna ascendente"
+                          >
+                            Nif
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="1th-phone"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="RecursoActivar para ordenar la columna ascendente"
+                          >
+                            Recurso
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="2th-phone"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="OrigenActivar para ordenar la columna ascendente"
+                          >
+                            Origen
+                          </th>
+                          <th
+                            class="toggleable sorting"
+                            id="3th-phone"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="DestinoActivar para ordenar la columna ascendente"
+                          >
+                            Destino
+                          </th>
+                          <th
+                            class="sorting"
+                            tabindex="0"
+                            aria-controls="DataTables_Table_0"
+                            rowspan="1"
+                            colspan="1"
+                            aria-label="Activar para ordenar la columna ascendente"
+                          ></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr role="row" class="odd">
+                          <td tabindex="0">
+                            <div class="checkbox">
+                              <input
+                                type="checkbox"
+                                value="130"
+                              /><label></label>
+                            </div>
+                          </td>
+                          <td class="sorting_1">12/04/2022</td>
+                          <td>test test</td>
+                          <td>
+                            <a
+                              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes/traslado_paciente/130"
+                              >test test test test</a
+                            >
+                            <div class="row-options">
+                              <a
+                                href="https://cxdes.com/admin/gestioncentros/traslado_pacientes/traslado_paciente/130"
+                                >Ver</a
+                              >
+                            </div>
+                          </td>
+                          <td></td>
+                          <td>Huelva</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div
+                          class="dataTables_info"
+                          id="DataTables_Table_0_info"
+                          role="status"
+                          aria-live="polite"
+                        >
+                          Mostrando 1 entradas
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div id="colvis"></div>
+                      <div id="" class="dt-page-jump"></div>
+                      <div
+                        class="dataTables_paginate paging_simple_numbers"
+                        id="DataTables_Table_0_paginate"
+                      >
+                        <ul class="pagination">
+                          <li
+                            class="paginate_button previous disabled"
+                            id="DataTables_Table_0_previous"
+                          >
+                            <a
+                              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                              aria-controls="DataTables_Table_0"
+                              data-dt-idx="0"
+                              tabindex="0"
+                              >Anterior</a
+                            >
+                          </li>
+                          <li class="paginate_button active">
+                            <a
+                              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                              aria-controls="DataTables_Table_0"
+                              data-dt-idx="1"
+                              tabindex="0"
+                              >1</a
+                            >
+                          </li>
+                          <li
+                            class="paginate_button next disabled"
+                            id="DataTables_Table_0_next"
+                          >
+                            <a
+                              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+                              aria-controls="DataTables_Table_0"
+                              data-dt-idx="2"
+                              tabindex="0"
+                              >Siguiente</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-header">
+      <div class="hide-menu" title="Contraer/expandir menú lateral">
+         <!-- <img src="collapse.png" alt="icon">  -->
+         <span class="collapse-sidebar">
+           <span class="material-symbols-outlined " style="color: rgba(0,0,0,0.7);">first_page</span> menú colapsado</span>
+          <span class="material-symbols-outlined expand-sidebar" style="color: rgba(0,0,0,0.7);  ">
+            last_page
+          </span>
+
+          
+      </div>
+     
+        
+    </div>
+    <div class="divider-line">
+      <span class="divid-line-draw"></span>
+      <span class="divid-year">@ 2023.</span>
+    </div>
+
+
+    <!-- Likes -->
+    <div
+      class="modal likes_modal fade"
+      id="modal_post_likes"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">
+              Compañeros a los que les gusta este post
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div id="modal_post_likes_wrapper"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+              class="btn btn-info load_more_post_likes"
+              >Cargar más</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Likes -->
+    <div
+      class="modal likes_modal animated fadeIn"
+      id="modal_post_comment_likes"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title">
+              Compañeros a los que les gusta este comentario
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div id="modal_comment_likes_wrapper"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes#"
+              class="btn btn-info load_more_post_comment_likes"
+              >Cargar más</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="event"></div>
+    <div id="newsfeed" class="animated fadeIn hide"></div>
+    <!-- Task modal view -->
+    <div
+      class="modal fade task-modal-single"
+      id="task-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content data"></div>
+      </div>
+    </div>
+
+    <!--Add/edit task modal-->
+    <div id="_task"></div>
+
+    <!-- Lead Data Add/Edit-->
+    <div
+      class="modal fade lead-modal"
+      id="lead-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content data"></div>
+      </div>
+    </div>
+
+    <div id="timers-logout-template-warning" class="hide">
+      <h2 class="bold">
+        Temporizador de tareas iniciado!<br /><br />¿Está seguro que quiere
+        salir sin detener el temporizador?
+      </h2>
+      <hr />
+      <a
+        href="https://cxdes.com/admin/authentication/logout"
+        class="btn btn-danger"
+        >Salir</a
+      >
+    </div>
+
+    <!--Lead convert to customer modal-->
+    <div id="lead_convert_to_customer"></div>
+
+    <!--Lead reminder modal-->
+    <div id="lead_reminder_modal"></div>
+
+    <script
+      type="text/javascript"
+      id="vendor-js"
+      src="./desingn_files/vendor-admin.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="jquery-migrate-js"
+      src="./desingn_files/jquery-migrate.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="datatables-js"
+      src="./desingn_files/datatables.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="moment-js"
+      src="./desingn_files/moment.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="bootstrap-select-js"
+      src="./desingn_files/bootstrap-select.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="bootstrap-select-lang-js"
+      src="./desingn_files/defaults-es_ES.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="tinymce-js"
+      src="./desingn_files/tinymce.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="jquery-validation-js"
+      src="./desingn_files/jquery.validate.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="jquery-validation-lang-js"
+      src="./desingn_files/messages_es.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="google-js"
+      src="./desingn_files/api.js.descarga"
+      defer=""
+    ></script>
+    <script
+      type="text/javascript"
+      id="common-js"
+      src="./desingn_files/common.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="app-js"
+      src="./desingn_files/main.min.js.descarga"
+    ></script>
+    <script
+      type="text/javascript"
+      id="datatables_export_ow"
+      src="./desingn_files/datatables_export_ow.js.descarga"
+    ></script>
+    <script>
+      function custom_fields_hyperlink() {
+        var cf_hyperlink = $("body").find(".cf-hyperlink");
+        if (cf_hyperlink.length) {
+          $.each(cf_hyperlink, function () {
+            var cfh_wrapper = $(this);
+            var cfh_field_to = cfh_wrapper.attr("data-fieldto");
+            var cfh_field_id = cfh_wrapper.attr("data-field-id");
+            var textEl = $("body").find(
+              "#custom_fields_" + cfh_field_to + "_" + cfh_field_id + "_popover"
+            );
+            var hiddenField = $(
+              "#custom_fields\\\[" +
+                cfh_field_to +
+                "\\\]\\\[" +
+                cfh_field_id +
+                "\\\]"
+            );
+            var cfh_value = cfh_wrapper.attr("data-value");
+            hiddenField.val(cfh_value);
+
+            if ($(hiddenField.val()).html() != "") {
+              textEl.html($(hiddenField.val()).html());
+            }
+            var cfh_field_name = cfh_wrapper.attr("data-field-name");
+            textEl
+              .popover({
+                html: true,
+                trigger: "manual",
+                placement: "top",
+                title: cfh_field_name,
+                content: function () {
+                  return $(cfh_popover_templates[cfh_field_id]).html();
+                },
+              })
+              .on("click", function (e) {
+                var $popup = $(this);
+                $popup.popover("toggle");
+                var titleField = $(
+                  "#custom_fields_" +
+                    cfh_field_to +
+                    "_" +
+                    cfh_field_id +
+                    "_title"
+                );
+                var urlField = $(
+                  "#custom_fields_" +
+                    cfh_field_to +
+                    "_" +
+                    cfh_field_id +
+                    "_link"
+                );
+                var ttl = $(hiddenField.val()).html();
+                var cfUrl = $(hiddenField.val()).attr("href");
+                if (cfUrl) {
+                  $("#cf_hyperlink_open_" + cfh_field_id).attr(
+                    "href",
+                    cfUrl.indexOf("://") === -1 ? "http://" + cfUrl : cfUrl
+                  );
+                }
+                titleField.val(ttl);
+                urlField.val(cfUrl);
+                $(
+                  "#custom_fields_" +
+                    cfh_field_to +
+                    "_" +
+                    cfh_field_id +
+                    "_btn-save"
+                ).click(function () {
+                  hiddenField.val(
+                    urlField.val() != ""
+                      ? '<a href="' +
+                          urlField.val() +
+                          '" target="_blank">' +
+                          titleField.val() +
+                          "</a>"
+                      : ""
+                  );
+                  textEl.html(
+                    titleField.val() == ""
+                      ? "Click aquí para agregar link"
+                      : titleField.val()
+                  );
+                  $popup.popover("toggle");
+                });
+                $(
+                  "#custom_fields_" +
+                    cfh_field_to +
+                    "_" +
+                    cfh_field_id +
+                    "_btn-cancel"
+                ).click(function () {
+                  if (urlField.val() == "") {
+                    hiddenField.val("");
+                  }
+                  $popup.popover("toggle");
+                });
+              });
+          });
+        }
+      }
+    </script>
+    <script src="./desingn_files/comboTreePlugin.js.descarga"></script>
+    <script src="./desingn_files/icontains.js.descarga"></script>
+    <script>
+      $(function () {
+        $("#mass_delete").on("change", function () {
+          if ($("#mass_delete").prop("checked")) {
+            $("#mass_deactivate").prop("disabled", true);
+          } else {
+            $("#mass_deactivate").prop("disabled", false);
+          }
+        });
+        $("#mass_deactivate").on("change", function () {
+          if ($("#mass_deactivate").prop("checked")) {
+            $("#mass_delete").prop("disabled", true);
+          } else {
+            $("#mass_delete").prop("disabled", false);
+          }
+        });
+
+        var CustomersServerParams = {};
+        $.each($("._hidden_inputs._filters input"), function () {
+          CustomersServerParams[$(this).attr("name")] =
+            '[name="' + $(this).attr("name") + '"]';
+        });
+        CustomersServerParams["exclude_inactive"] =
+          '[name="exclude_inactive"]:checked';
+
+        var tAPI = initDataTable(
+          ".table-traslado_pacientes",
+          admin_url + "traslado_pacientes/table",
+          [0],
+          [0],
+          CustomersServerParams,
+          [1, "desc"]
+        );
+        $('input[name="exclude_inactive"]').on("change", function () {
+          tAPI.ajax.reload();
+        });
+      });
+      function customers_bulk_action(event) {
+        var r = confirm(app.lang.confirm_action_prompt);
+        var mass_delete = $("#mass_delete").prop("checked");
+        var mass_deactivate = $("#mass_deactivate").prop("checked");
+        if (r == false) {
+          return false;
+        } else if (
+          !(mass_delete == false || typeof mass_delete == "undefined")
+        ) {
+          var mass_delete = $("#mass_delete").prop("checked");
+          var ids = [];
+          var data = {};
+          if (mass_delete == false || typeof mass_delete == "undefined") {
+            data.groups = $(
+              'select[name="move_to_groups_customers_bulk[]"]'
+            ).selectpicker("val");
+            if (data.groups.length == 0) {
+              data.groups = "remove_all";
+            }
+          } else {
+            data.mass_delete = true;
+          }
+          var rows = $(".table-traslado_pacientes").find("tbody tr");
+          $.each(rows, function () {
+            var checkbox = $($(this).find("td").eq(0)).find("input");
+            if (checkbox.prop("checked") == true) {
+              ids.push(checkbox.val());
+            }
+          });
+          data.ids = ids;
+          $(event).addClass("disabled");
+          setTimeout(function () {
+            $.post(admin_url + "traslado_pacientes/bulk_action", data).done(
+              function () {
+                window.location.reload();
+              }
+            );
+          }, 50);
+        } else if (
+          !(mass_deactivate == false || typeof mass_deactivate == "undefined")
+        ) {
+          var mass_deactivate = $("#mass_deactivate").prop("checked");
+          var ids = [];
+          var data = {};
+          data.mass_deactivate = true;
+          var rows = $(".table-traslado_pacientes").find("tbody tr");
+          $.each(rows, function () {
+            var checkbox = $($(this).find("td").eq(0)).find("input");
+            if (checkbox.prop("checked") == true) {
+              ids.push(checkbox.val());
+            }
+          });
+          data.ids = ids;
+          $(event).addClass("disabled");
+          setTimeout(function () {
+            $.post(
+              admin_url + "traslado_pacientes/bulk_action_deactivate",
+              data
+            ).done(function () {
+              window.location.reload();
+            });
+          }, 50);
+        }
+      }
+    </script>
+
+    <div
+      id="lightboxOverlay"
+      class="lightboxOverlay"
+      style="display: none"
+    ></div>
+    <!-- <div id="lightbox" class="lightbox" style="display: none">
+      <div class="lb-outerContainer">
+        <div class="lb-container">
+          <img
+            class="lb-image"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+          />
+          <div class="lb-nav">
+            <a
+              class="lb-prev"
+              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes"
+            ></a
+            ><a
+              class="lb-next"
+              href="https://cxdes.com/admin/gestioncentros/traslado_pacientes"
+            ></a>
+          </div>
+          <div class="lb-loader"><a class="lb-cancel"></a></div>
+        </div>
+      </div>
+      <div class="lb-dataContainer">
+        <div class="lb-data">
+          <div class="lb-details">
+            <span class="lb-caption"></span><span class="lb-number"></span>
+          </div>
+          <div class="lb-closeContainer"><a class="lb-close"></a></div>
+        </div>
+      </div>
+    </div> -->
+    <scribe-shadow
+      id="crxjs-ext"
+      style="
+        position: fixed;
+        width: 0px;
+        height: 0px;
+        top: 0px;
+        left: 0px;
+        z-index: 2147483647;
+        overflow: visible;
+      "
+      ><template shadowrootmode="open"
+        ><div
+          id="root-scribe-elem"
+          style="
+            position: fixed;
+            width: 0px;
+            height: 0px;
+            top: 0px;
+            left: 0px;
+            overflow: visible;
+            color: rgb(15, 23, 42);
+          "
+        ></div>
+        <link
+          rel="stylesheet"
+          href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css" /></template
+    ></scribe-shadow>
+  </body>
+</html>
